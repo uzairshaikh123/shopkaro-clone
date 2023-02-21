@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "server":"json-server --w db.json --p 8080",
     "lint": "next lint"
   },
   "dependencies": {
