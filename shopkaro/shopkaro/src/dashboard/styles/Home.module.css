@@ -1,1 +1,90 @@
 /* index page css here  */
+.main{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    margin: 30px auto 0px auto;
+}
+.nav{
+    width: 190px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(102, 0, 255, 0.78);
+    text-align: left;
+}
+.nav img{
+    width: 62%;
+    text-align: center;
+    margin: 30px auto 0px auto;
+    height: auto;
+}
+.nav a{
+    font-size: large;
+    color: rgb(221, 217, 217);
+    font-weight: 400;
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.nav a:hover{
+    color: rgba(102, 0, 255, 0.78);
+    background: white;
+}
+.nav a:active{
+    color: rgba(102, 0, 255, 0.78);
+    background: white;
+}
+
+/* header end */
+
+.cont h1{
+    color: rgb(100, 99, 99);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* dashboard  */
+.grd{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+}
+.grd div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.grd div div {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 50px;
+font-weight: 900;
+/* color: gray; */
+color: white;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.grd div h3{
+    color:gray;
+    font-weight: 400;font-size: 25px;
+    padding: 20px;
+}
