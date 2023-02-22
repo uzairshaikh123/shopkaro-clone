@@ -11,5 +11,5 @@ womens:[{id:1,title:"",category:"",size:"",price:"",img:"",offprice:"30%",desc:"
 Homepage : Suraj
 Admin Page : Vicky
 Sign In : Uzair
-Payment : Mustafa
-Product Page : Mohak
+Payment and cartpage : Mustafa
+Product Page : Uzair
