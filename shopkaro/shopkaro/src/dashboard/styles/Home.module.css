@@ -11,7 +11,7 @@
     display: flex;
     margin: 30px auto 0px auto;
     background-color: white;
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke; */
 }
 .nav{
     width: 190px;
@@ -67,6 +67,7 @@ border-top-left-radius: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto);
+    margin-left: -10%;
 }
 .grd div{
     display: flex;
@@ -79,8 +80,6 @@ border-top-left-radius: 20px;
     height: 130px;
     display: flex;
     cursor: pointer;
-    justify-content: center;
-align-items: center;
 border-radius: 50%;
 font-size: 30px;
 font-weight: 900;
@@ -92,4 +91,53 @@ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     color:gray;
     font-weight: 400;font-size: 25px;
     padding: 20px;
+}
+
+/* add products */
+.frm{
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    margin: 10px auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.frm form{
+    width: 40%;
+    height: 90%;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #8738FF;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.frm form input,.frm form select{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    outline: none;
+    padding: 20px;
+}
+.frm form select::placeholder{
+    padding: 10px;
+    color: gray;
+}
+.add{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: #8738FF;
+    border-radius: 20px;
+    font-size: large;
+    margin-top: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.add:hover{
+    background-color: #8738FF;
+    color: white;
+    border: 1px solid white;
 }
