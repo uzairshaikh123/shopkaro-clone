@@ -1,406 +1,416 @@
 {
-    "mens": [
-        {
-            "id": 1,
-            "name": "Classic White T-Shirt",
-            "description": "A comfortable and versatile classic white t-shirt",
-            "image": "https://img1.junaroad.com/stories/story_p_63e3997cfd1d3c6a4c544525-1675860348.jpeg",
-            "price": 20.99,
-            "color": "White",
-            "size": "S",
-            "brand": "brand A",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 2,
-            "name": "Graphic Print T-Shirt",
-            "description": "A stylish graphic print t-shirt",
-            "image": "https://img3.junaroad.com/uiproducts/16186189/zoom_0-1554817240.jpg",
-            "price": 24.99,
-            "color": "Black",
-            "size": "M",
-            "brand": "brand B",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 3,
-            "name": "V-Neck T-Shirt",
-            "description": "A flattering v-neck t-shirt",
-            "image": "https://img3.junaroad.com/uiproducts/18594838/zoom_0-1666006217.jpg",
-            "price": 18.99,
-            "color": "Navy",
-            "size": "L",
-            "brand": "brand C",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 4,
-            "name": "Long Sleeve T-Shirt",
-            "description": "A comfortable and lightweight long sleeve t-shirt",
-            "image": "https://img1.junaroad.com/stories/story_p_63e7c213b388b00837d5898f-1676132883.jpeg",
-            "price": 22.99,
-            "color": "yellow",
-            "size": "XL",
-            "brand": "brand A",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 5,
-            "name": "color-Block T-Shirt",
-            "description": "A trendy color-block t-shirt",
-            "image": "https://img3.junaroad.com/uiproducts/16943495/zoom_0-1582023272.jpg",
-            "price": 26.99,
-            "color": "Red/White",
-            "size": "S",
-            "brand": "brand B",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 6,
-            "name": "Striped T-Shirt",
-            "description": "A classic striped t-shirt",
-            "image": "https://img3.junaroad.com/uiproducts/19260821/zoom_0-1674834024.jpg",
-            "price": 21.99,
-            "color": "Black/White",
-            "size": "M",
-            "brand": "brand C",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 7,
-            "name": "Ringer T-Shirt",
-            "description": "A vintage-style ringer t-shirt",
-            "image": "https://img3.junaroad.com/uiproducts/17383344/zoom_0-1604493918.jpg",
-            "price": 19.99,
-            "color": "Navy/White",
-            "size": "L",
-            "brand": "brand A",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 8,
-            "name": "Pocket T-Shirt",
-            "description": "A casual pocket t-shirt",
-            "image": "https://img1.junaroad.com/stories/story_p_63ebbebbf3805708325f9a76-1676394171.jpeg",
-            "price": 23.99,
-            "color": "yellow",
-            "size": "XL",
-            "brand": "brand B",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 9,
-            "name": "Henley T-Shirt",
-            "description": "A stylish and comfortable henley t-shirt",
-            "image": "https://img3.junaroad.com/uiproducts/19260817/zoom_0-1674834025.jpg",
-            "price": 27.99,
-            "color": "red",
-            "size": "S",
-            "brand": "brand C",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 11,
-            "name": "Mens Black T-Shirt",
-            "description": "A classic black t-shirt for men",
-            "price": 19.99,
-            "size": "M",
-            "color": "Black",
-            "material": "100% Cotton",
-            "image": "https://img3.junaroad.com/uiproducts/19260818/zoom_0-1674834024.jpg",
-            "brand": "Nike",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 13,
-            "name": "Mens Brown Leather Belt",
-            "description": "A stylish and durable brown leather belt for men",
-            "price": 29.99,
-            "size": "L",
-            "color": "red",
-            "material": "Genuine Leather",
-            "image": "https://img3.junaroad.com/uiproducts/19260820/zoom_0-1674834024.jpg",
-            "brand": "Tommy Hilfiger",
-            "category": "T-Shirts"
-        },
-        {
-            "id": 14,
-            "name": "Mens Kurta",
-            "description": "A comfortable and warm grey hoodie for men",
-            "price": 39.99,
-            "size": "XL",
-            "color": "white",
-            "material": "80% Cotton, 20% Polyester",
-            "image": "https://img3.junaroad.com/uiproducts/19147594/zoom_0-1673332391.jpg",
-            "brand": "Polo",
-            "category": "Kurtas"
-        },
-        {
-            "id": 16,
-            "name": "Mens Blue Polo Kurta",
-            "description": "A classic blue polo shirt for men",
-            "price": 29.99,
-            "size": "L",
-            "color": "green",
-            "material": "100% Cotton",
-            "image": "https://img3.junaroad.com/uiproducts/19147566/zoom_0-1673247269.jpg",
-            "brand": "Ralph Lauren",
-            "category": "kurta"
-        },
-        {
-            "id": 17,
-            "name": "Men's Classic Fit Dress Shirt",
-            "brand": "Calvin Klein",
-            "color": "yellow",
-            "size": "L",
-            "material": "100% Cotton",
-            "price": 49.99,
-            "image": "https://img1.junaroad.com/stories/story_p_63de8e52adb8b819ee4cf17a-1676956818.jpeg",
-            "category": "Shirts"
-        },
-        {
-            "id": 18,
-            "name": "Slim Fit Dress Shirt",
-            "brand": "Tommy Hilfiger",
-            "color": "red",
-            "size": "M",
-            "material": "Cotton Blend",
-            "price": 59.99,
-            "image": "https://img3.junaroad.com/uiproducts/19148013/zoom_0-1673333176.jpg",
-            "category": "Shirts"
-        },
-        {
-            "id": 19,
-            "name": "Button-Down Dress kurta",
-            "brand": "Ralph Lauren",
-            "color": "Blue",
-            "size": "XL",
-            "material": "Linen",
-            "price": 69.99,
-            "image": "https://img3.junaroad.com/uiproducts/18650571/zoom_0-1668069664.jpg",
-            "category": "kurta"
-        },
-        {
-            "id": 20,
-            "name": "Non-Iron Dress Kurta",
-            "brand": "Brooks Brothers",
-            "color": "Navy",
-            "size": "S",
-            "material": "Cotton",
-            "price": 79.99,
-            "image": "https://img1.junaroad.com/stories/story_p_63f331becc8b5e0812fd693c-1676882366.jpeg",
-            "category": "Kurta"
-        },
-        {
-            "id": 21,
-            "name": "French Cuff Dress Shirt",
-            "brand": "Hugo Boss",
-            "color": "Black",
-            "size": "L",
-            "material": "Cotton",
-            "price": 89.99,
-            "image": "https://img3.junaroad.com/uiproducts/15481089/zoom_0-1536231760.jpg",
-            "category": "Shirts"
-        },
-        {
-            "id": 22,
-            "name": "Regular Fit Dress Shirt",
-            "brand": "Giorgio Armani",
-            "color": "brown",
-            "size": "M",
-            "material": "Silk",
-            "price": 249.99,
-            "image": "https://img3.junaroad.com/uiproducts/18030715/zoom_0-1633963063.jpg",
-            "category": "Shirts"
-        },
-        {
-            "id": 23,
-            "name": "Dobby Dress Shirt",
-            "brand": "Polo Ralph Lauren",
-            "color": "red",
-            "size": "XL",
-            "material": "Cotton",
-            "price": 99.99,
-            "image": "https://img1.junaroad.com/stories/story_p_63f05e91cc8b5e08304963a6-1676697233.jpeg",
-            "category": "Shirts"
-        },
-        {
-            "id": 24,
-            "name": "Slim-Fit Stretch Dress Shirt",
-            "brand": "Banana Republic",
-            "color": "Blue",
-            "size": "S",
-            "material": "Cotton Blend",
-            "price": 54.99,
-            "image": "https://img3.junaroad.com/uiproducts/18620683/zoom_0-1667391315.jpg",
-            "category": "Shirts"
-        },
-        {
-            "id": 25,
-            "name": "Tuxedo Dress Shirt",
-            "brand": "Jos. A. Bank",
-            "color": "White",
-            "size": "L",
-            "material": "Cotton",
-            "price": 119.99,
-            "image": "https://img3.junaroad.com/uiproducts/19223096/zoom_0-1674583448.jpg",
-            "category": "Shirts"
-        }
-    ],
-    "womens": [
-        {
-            "id": 1,
-            "title": "",
-            "category": "",
-            "size": "",
-            "price": "",
-            "img": "",
-            "offprice": "30%",
-            "desc": "",
-            "brand": "",
-            "color": ""
-        },
-        {
-            "id": 1,
-            "name": "Womens Black Leather Jacket",
-            "description": "A fashionable and warm black leather jacket for women",
-            "price": 99.99,
-            "size": "M",
-            "color": "Black",
-            "material": "Genuine Leather",
-            "image": "https://example.com/womens-leather-jacket.jpg",
-            "brand": "Zara",
-            "category": "Jackets"
-        },
-        {
-            "id": 2,
-            "name": "Womens Blue Denim Jeans",
-            "description": "Comfortable and stylish blue denim jeans for women",
-            "price": 49.99,
-            "size": "S",
-            "color": "Blue",
-            "material": "98% Cotton, 2% Spandex",
-            "image": "https://example.com/womens-blue-jeans.jpg",
-            "brand": "Levis",
-            "category": "Jeans"
-        },
-        {
-            "id": 3,
-            "name": "Womens Red High Heels",
-            "description": "A pair of stylish and comfortable red high heels for women",
-            "price": 59.99,
-            "size": "7",
-            "color": "Red",
-            "material": "Faux Leather",
-            "image": "https://example.com/womens-red-heels.jpg",
-            "brand": "Steve Madden",
-            "category": "Shoes"
-        },
-        {
-            "id": 1,
-            "name": "Floral Print Maxi Dress",
-            "category": "Dresses",
-            "brand": "XYZ",
-            "price": 49.99,
-            "description": "Elegant and comfortable maxi dress with floral print.",
-            "image": "https://example.com/images/floral-maxi-dress.jpg",
-            "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ],
-            "colors": [
-                "Blue",
-                "Green",
-                "Yellow"
-            ],
-            "stock": 50
-        },
-        {
-            "id": "001",
-            "name": "Floral Print Maxi Dress",
-            "price": 45.99,
-            "color": "Green",
-            "size": "Small",
-            "brand": "Zara",
-            "category": "Dresses",
-            "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
-        },
-        {
-            "id": "002",
-            "name": "Faux Leather Jacket",
-            "price": 69.99,
-            "color": "Black",
-            "size": "Medium",
-            "brand": "H&M",
-            "category": "Jackets",
-            "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
-        },
-        {
-            "id": "003",
-            "name": "Ripped Skinny Jeans",
-            "price": 59.99,
-            "color": "Blue",
-            "size": "Large",
-            "brand": "Levi's",
-            "category": "Jeans",
-            "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
-        },
-        {
-            "id": "004",
-            "name": "Sleeveless Lace Top",
-            "price": 32.99,
-            "color": "White",
-            "size": "Small",
-            "brand": "Forever 21",
-            "category": "Tops",
-            "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
-        },
-        {
-            "id": "005",
-            "name": "Cotton T-Shirt",
-            "price": 19.99,
-            "color": "Pink",
-            "size": "Large",
-            "brand": "Gap",
-            "category": "Tops",
-            "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
-        },
-        {
-            "id": "006",
-            "name": "Printed Skirt",
-            "price": 39.99,
-            "color": "Red",
-            "size": "Medium",
-            "brand": "Zara",
-            "category": "Skirts",
-            "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
-        },
-        {
-            "id": "007",
-            "name": "Hooded Sweatshirt",
-            "price": 49.99,
-            "color": "Grey",
-            "size": "Small",
-            "brand": "Nike",
-            "category": "Sweatshirts",
-            "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
-        },
-        {
-            "id": "008",
-            "name": "Flared Trousers",
-            "price": 55.99,
-            "color": "Black",
-            "size": "Large",
-            "brand": "Zara",
-            "category": "Pants",
-            "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
-        }
-    ],
-    "orders": [],
-    "users": [],
-    "cart": [],
+  "mens": [
+    {
+      "id": 1,
+      "name": "Classic White T-Shirt",
+      "description": "A comfortable and versatile classic white t-shirt",
+      "image": "https://img1.junaroad.com/stories/story_p_63e3997cfd1d3c6a4c544525-1675860348.jpeg",
+      "price": 20.99,
+      "color": "White",
+      "size": "S",
+      "brand": "brand A",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 2,
+      "name": "Graphic Print T-Shirt",
+      "description": "A stylish graphic print t-shirt",
+      "image": "https://img3.junaroad.com/uiproducts/16186189/zoom_0-1554817240.jpg",
+      "price": 24.99,
+      "color": "Black",
+      "size": "M",
+      "brand": "brand B",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 3,
+      "name": "V-Neck T-Shirt",
+      "description": "A flattering v-neck t-shirt",
+      "image": "https://img3.junaroad.com/uiproducts/18594838/zoom_0-1666006217.jpg",
+      "price": 18.99,
+      "color": "Navy",
+      "size": "L",
+      "brand": "brand C",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 4,
+      "name": "Long Sleeve T-Shirt",
+      "description": "A comfortable and lightweight long sleeve t-shirt",
+      "image": "https://img1.junaroad.com/stories/story_p_63e7c213b388b00837d5898f-1676132883.jpeg",
+      "price": 22.99,
+      "color": "yellow",
+      "size": "XL",
+      "brand": "brand A",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 5,
+      "name": "color-Block T-Shirt",
+      "description": "A trendy color-block t-shirt",
+      "image": "https://img3.junaroad.com/uiproducts/16943495/zoom_0-1582023272.jpg",
+      "price": 26.99,
+      "color": "Red/White",
+      "size": "S",
+      "brand": "brand B",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 6,
+      "name": "Striped T-Shirt",
+      "description": "A classic striped t-shirt",
+      "image": "https://img3.junaroad.com/uiproducts/19260821/zoom_0-1674834024.jpg",
+      "price": 21.99,
+      "color": "Black/White",
+      "size": "M",
+      "brand": "brand C",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 7,
+      "name": "Ringer T-Shirt",
+      "description": "A vintage-style ringer t-shirt",
+      "image": "https://img3.junaroad.com/uiproducts/17383344/zoom_0-1604493918.jpg",
+      "price": 19.99,
+      "color": "Navy/White",
+      "size": "L",
+      "brand": "brand A",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 8,
+      "name": "Pocket T-Shirt",
+      "description": "A casual pocket t-shirt",
+      "image": "https://img1.junaroad.com/stories/story_p_63ebbebbf3805708325f9a76-1676394171.jpeg",
+      "price": 23.99,
+      "color": "yellow",
+      "size": "XL",
+      "brand": "brand B",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 9,
+      "name": "Henley T-Shirt",
+      "description": "A stylish and comfortable henley t-shirt",
+      "image": "https://img3.junaroad.com/uiproducts/19260817/zoom_0-1674834025.jpg",
+      "price": 27.99,
+      "color": "red",
+      "size": "S",
+      "brand": "brand C",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 11,
+      "name": "Mens Black T-Shirt",
+      "description": "A classic black t-shirt for men",
+      "price": 19.99,
+      "size": "M",
+      "color": "Black",
+      "material": "100% Cotton",
+      "image": "https://img3.junaroad.com/uiproducts/19260818/zoom_0-1674834024.jpg",
+      "brand": "Nike",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 13,
+      "name": "Mens Brown Leather Belt",
+      "description": "A stylish and durable brown leather belt for men",
+      "price": 29.99,
+      "size": "L",
+      "color": "red",
+      "material": "Genuine Leather",
+      "image": "https://img3.junaroad.com/uiproducts/19260820/zoom_0-1674834024.jpg",
+      "brand": "Tommy Hilfiger",
+      "category": "T-Shirts"
+    },
+    {
+      "id": 14,
+      "name": "Mens Kurta",
+      "description": "A comfortable and warm grey hoodie for men",
+      "price": 39.99,
+      "size": "XL",
+      "color": "white",
+      "material": "80% Cotton, 20% Polyester",
+      "image": "https://img3.junaroad.com/uiproducts/19147594/zoom_0-1673332391.jpg",
+      "brand": "Polo",
+      "category": "Kurtas"
+    },
+    {
+      "id": 16,
+      "name": "Mens Blue Polo Kurta",
+      "description": "A classic blue polo shirt for men",
+      "price": 29.99,
+      "size": "L",
+      "color": "green",
+      "material": "100% Cotton",
+      "image": "https://img3.junaroad.com/uiproducts/19147566/zoom_0-1673247269.jpg",
+      "brand": "Ralph Lauren",
+      "category": "kurta"
+    },
+    {
+      "id": 17,
+      "name": "Men's Classic Fit Dress Shirt",
+      "brand": "Calvin Klein",
+      "color": "yellow",
+      "size": "L",
+      "material": "100% Cotton",
+      "price": 49.99,
+      "image": "https://img1.junaroad.com/stories/story_p_63de8e52adb8b819ee4cf17a-1676956818.jpeg",
+      "category": "Shirts"
+    },
+    {
+      "id": 18,
+      "name": "Slim Fit Dress Shirt",
+      "brand": "Tommy Hilfiger",
+      "color": "red",
+      "size": "M",
+      "material": "Cotton Blend",
+      "price": 59.99,
+      "image": "https://img3.junaroad.com/uiproducts/19148013/zoom_0-1673333176.jpg",
+      "category": "Shirts"
+    },
+    {
+      "id": 19,
+      "name": "Button-Down Dress kurta",
+      "brand": "Ralph Lauren",
+      "color": "Blue",
+      "size": "XL",
+      "material": "Linen",
+      "price": 69.99,
+      "image": "https://img3.junaroad.com/uiproducts/18650571/zoom_0-1668069664.jpg",
+      "category": "kurta"
+    },
+    {
+      "id": 20,
+      "name": "Non-Iron Dress Kurta",
+      "brand": "Brooks Brothers",
+      "color": "Navy",
+      "size": "S",
+      "material": "Cotton",
+      "price": 79.99,
+      "image": "https://img1.junaroad.com/stories/story_p_63f331becc8b5e0812fd693c-1676882366.jpeg",
+      "category": "Kurta"
+    },
+    {
+      "id": 21,
+      "name": "French Cuff Dress Shirt",
+      "brand": "Hugo Boss",
+      "color": "Black",
+      "size": "L",
+      "material": "Cotton",
+      "price": 89.99,
+      "image": "https://img3.junaroad.com/uiproducts/15481089/zoom_0-1536231760.jpg",
+      "category": "Shirts"
+    },
+    {
+      "id": 22,
+      "name": "Regular Fit Dress Shirt",
+      "brand": "Giorgio Armani",
+      "color": "brown",
+      "size": "M",
+      "material": "Silk",
+      "price": 249.99,
+      "image": "https://img3.junaroad.com/uiproducts/18030715/zoom_0-1633963063.jpg",
+      "category": "Shirts"
+    },
+    {
+      "id": 23,
+      "name": "Dobby Dress Shirt",
+      "brand": "Polo Ralph Lauren",
+      "color": "red",
+      "size": "XL",
+      "material": "Cotton",
+      "price": 99.99,
+      "image": "https://img1.junaroad.com/stories/story_p_63f05e91cc8b5e08304963a6-1676697233.jpeg",
+      "category": "Shirts"
+    },
+    {
+      "id": 24,
+      "name": "Slim-Fit Stretch Dress Shirt",
+      "brand": "Banana Republic",
+      "color": "Blue",
+      "size": "S",
+      "material": "Cotton Blend",
+      "price": 54.99,
+      "image": "https://img3.junaroad.com/uiproducts/18620683/zoom_0-1667391315.jpg",
+      "category": "Shirts"
+    },
+    {
+      "id": 25,
+      "name": "Tuxedo Dress Shirt",
+      "brand": "Jos. A. Bank",
+      "color": "White",
+      "size": "L",
+      "material": "Cotton",
+      "price": 119.99,
+      "image": "https://img3.junaroad.com/uiproducts/19223096/zoom_0-1674583448.jpg",
+      "category": "Shirts"
+    },
+    {
+      "name": "test",
+      "price": "223",
+      "quantity": "23",
+      "size": "3",
+      "description": "sadfsedf",
+      "image": "https://sdf.com",
+      "id": 26
+    }
+  ],
+  "womens": [
+    {
+      "id": 1,
+      "name": "Womens Black Leather Jacket",
+      "description": "A fashionable and warm black leather jacket for women",
+      "price": 99.99,
+      "size": "M",
+      "color": "Black",
+      "material": "Genuine Leather",
+      "image": "https://example.com/womens-leather-jacket.jpg",
+      "brand": "Zara",
+      "category": "Jackets"
+    },
+    {
+      "id": 2,
+      "name": "Womens Blue Denim Jeans",
+      "description": "Comfortable and stylish blue denim jeans for women",
+      "price": 49.99,
+      "size": "S",
+      "color": "Blue",
+      "material": "98% Cotton, 2% Spandex",
+      "image": "https://example.com/womens-blue-jeans.jpg",
+      "brand": "Levis",
+      "category": "Jeans"
+    },
+    {
+      "id": 3,
+      "name": "Womens Red High Heels",
+      "description": "A pair of stylish and comfortable red high heels for women",
+      "price": 59.99,
+      "size": "7",
+      "color": "Red",
+      "material": "Faux Leather",
+      "image": "https://example.com/womens-red-heels.jpg",
+      "brand": "Steve Madden",
+      "category": "Shoes"
+    },
+    {
+      "id": 1,
+      "name": "Floral Print Maxi Dress",
+      "category": "Dresses",
+      "brand": "XYZ",
+      "price": 49.99,
+      "description": "Elegant and comfortable maxi dress with floral print.",
+      "image": "https://example.com/images/floral-maxi-dress.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Blue",
+        "Green",
+        "Yellow"
+      ],
+      "stock": 50
+    },
+    {
+      "id": "001",
+      "name": "Floral Print Maxi Dress",
+      "price": 45.99,
+      "color": "Green",
+      "size": "Small",
+      "brand": "Zara",
+      "category": "Dresses",
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+    },
+    {
+      "id": "002",
+      "name": "Faux Leather Jacket",
+      "price": 69.99,
+      "color": "Black",
+      "size": "Medium",
+      "brand": "H&M",
+      "category": "Jackets",
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+    },
+    {
+      "id": "003",
+      "name": "Ripped Skinny Jeans",
+      "price": 59.99,
+      "color": "Blue",
+      "size": "Large",
+      "brand": "Levi's",
+      "category": "Jeans",
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+    },
+    {
+      "id": "004",
+      "name": "Sleeveless Lace Top",
+      "price": 32.99,
+      "color": "White",
+      "size": "Small",
+      "brand": "Forever 21",
+      "category": "Tops",
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+    },
+    {
+      "id": "005",
+      "name": "Cotton T-Shirt",
+      "price": 19.99,
+      "color": "Pink",
+      "size": "Large",
+      "brand": "Gap",
+      "category": "Tops",
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+    },
+    {
+      "id": "006",
+      "name": "Printed Skirt",
+      "price": 39.99,
+      "color": "Red",
+      "size": "Medium",
+      "brand": "Zara",
+      "category": "Skirts",
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+    },
+    {
+      "id": "007",
+      "name": "Hooded Sweatshirt",
+      "price": 49.99,
+      "color": "Grey",
+      "size": "Small",
+      "brand": "Nike",
+      "category": "Sweatshirts",
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+    },
+    {
+      "id": "008",
+      "name": "Flared Trousers",
+      "price": 55.99,
+      "color": "Black",
+      "size": "Large",
+      "brand": "Zara",
+      "category": "Pants",
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "name": "Womens Black Leather Jacket",
+      "description": "A fashionable and warm black leather jacket for women",
+      "price": 99.99,
+      "size": "M",
+      "color": "Black",
+      "material": "Genuine Leather",
+      "image": "https://example.com/womens-leather-jacket.jpg",
+      "brand": "Zara",
+      "category": "Jackets"
+    }
+  ],
+  "users": [],
+  "cart": [],
   "Order_completed": [
     {
       "id": 1,
