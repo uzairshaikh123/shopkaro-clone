@@ -2,6 +2,7 @@ import React from 'react'
 import Side from '@/components/Side'
 import styles from '@/styles/Home.module.css'
 const Dashboard = () => {
+
     return (
         <div className={styles.main}>
     <Side />
