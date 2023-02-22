@@ -21,7 +21,7 @@ router.push(`${url}`)
         <div className={styles.main}>
     <Side />
     <div className={styles.cont}>
-    <h1>Dashboard</h1>
+        <h1>Dashboard</h1>
     </div>
 
     <div className={styles.grd}>
@@ -42,7 +42,7 @@ export async function getServerSideProps(context) {
     let orders = await data.data;
 
 // all products 
-let productOld = await axios.get("http://localhost:8080/products")
+let productOld = await axios.get("http://localhost:8080/mens")
 let product = await productOld.data;
 
 // total earnings 
