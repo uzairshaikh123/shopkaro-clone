@@ -45,7 +45,7 @@ border-top-left-radius: 20px;
     color: rgba(102, 0, 255, 0.78);
     background: white;
 }
-.nav a:active{
+.nav .link{
     color: rgba(102, 0, 255, 0.78);
     background: white;
 }
