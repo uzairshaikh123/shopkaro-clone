@@ -1,32 +1,45 @@
-{
+{"products":[{
     "mens": [
         {
             "id": 1,
-           "title":"",
-           "category": "",
-           "size": "",
-           "price": "",
-           "img": "",
-           "offprice": "30%",
-           "desc": "",
-           "brand": "",
-           "color": ""
+            "title":"Kurta Pajama",
+            "category": "Kurta",
+            "size":["36","40","45"],
+            "price": "1500",
+            "img":"https://img3.junaroad.com/uiproducts/19344368/zoom_0-1676438102.jpg",
+           "offprice": "30",
+           "desc": "namaskar ethnic kurta set",
+           "brand": "Spike",
+           "color": "Yellow"
         }
     ],
     "womens": [
         {
             "id": 1,
-           "title":"",
-           "category": "",
-           "size": "",
-           "price": "",
-           "img": "",
-           "offprice": "30%",
-           "desc": "",
-           "brand": "",
-           "color": ""
+            "title":"Sari",
+            "category": "Kurta",
+            "size":["36","40","45"],
+            "price": "1500",
+            "img":"https://img3.junaroad.com/uiproducts/19344368/zoom_0-1676438102.jpg",
+           "offprice": "30",
+           "desc": "namaskar ethnic kurta set",
+           "brand": "Spike",
+           "color": "Yellow"
         }
-    ],
-    "orders":[],
-    "users":[]
+    ]
+}],
+"orders":[{
+    "id": 1,
+    "title":"Sari",
+    "category": "Kurta",
+    "size":["36","40","45"],
+    "price": "1500",
+    "img":"https://img3.junaroad.com/uiproducts/19344368/zoom_0-1676438102.jpg",
+   "offprice": "30",
+   "desc": "namaskar ethnic kurta set",
+   "brand": "Spike",
+   "color": "Yellow"
+}],
+"cart":[],
+"users":[]
 }
