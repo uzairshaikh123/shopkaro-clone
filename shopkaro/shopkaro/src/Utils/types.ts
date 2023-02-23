@@ -9,4 +9,5 @@ export interface Product{
    "brand": string,
    "color": string,
    "rating":string;
+   "quantity":number;
 }

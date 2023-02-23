@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ChakraProvider } from '@chakra-ui/react';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ChakraProvider } from '@chakra-ui/react';
 import { Provider } from 'react-redux/es/exports';
 import { store } from './Redux/store';
 import {BrowserRouter} from 'react-router-dom'
@@ -14,7 +14,9 @@ root.render(
   <Provider store={store}>
 <BrowserRouter>
   <ChakraProvider>
+    <div className='main'>
     <App />
+    </div>
   </ChakraProvider>
 </BrowserRouter>
   </Provider>
