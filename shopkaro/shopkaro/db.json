@@ -426,7 +426,7 @@
   "orders": [
     {
       "id": 1,
-      "name": "Womens Black Leather Jacket",
+      "product_name": "Womens Black Leather Jacket",
       "description": "A fashionable and warm black leather jacket for women",
       "price": 99.99,
       "size": "M",
@@ -434,9 +434,23 @@
       "material": "Genuine Leather",
       "image": "https://example.com/womens-leather-jacket.jpg",
       "brand": "Zara",
-      "category": "Jackets"
+      "category": "Jackets",
+      "name": "sdf",
+      "email": "vicky@gmail.com",
+      "phone": "08123456789",
+      "address": "hajipur"
     }
   ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "vicky@gmail.com",
+      "username": "admin",
+      "password": "admin"
+    }
+  ],
+
   "users": [],
   "cart": [
     {
@@ -476,6 +490,9 @@
       "quantity": 1
     }
   ],
+
+  
+
   "Order_completed": [
     {
       "id": 1,
@@ -492,6 +509,18 @@
       "desc": "namaskar ethnic kurta set",
       "brand": "Spike",
       "color": "Yellow"
+    }
+  ],
+  "deleted": [
+    {
+      "name": "test brand",
+      "price": "2332",
+      "brand": "test brand",
+      "quantity": "232",
+      "size": "3",
+      "description": "test brand",
+      "image": "https://brand.com",
+      "id": 20
     }
   ]
 }

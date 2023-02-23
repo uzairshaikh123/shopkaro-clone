@@ -13,6 +13,7 @@ let url = router.pathname;
         <Link className={url === "/addproduct" ? styles.link : "no"} href={"/addproduct"}>Add Product</Link>
         <Link className={url === "/products" ? styles.link : "no"} href={"/products"}>Products</Link>
         <Link className={url === "/users" ? styles.link : "no"} href={"/users"}>Users</Link>
+        <Link className={url === "/deleted" ? styles.link : "no"} href={"/deleted"}>Deleted</Link>
     </div> 
   )
 }
