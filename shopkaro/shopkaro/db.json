@@ -9,7 +9,8 @@
       "color": "White",
       "size": "S",
       "brand": "brand A",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "color": "Black",
       "size": "M",
       "brand": "brand B",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "color": "Navy",
       "size": "L",
       "brand": "brand C",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "color": "yellow",
       "size": "XL",
       "brand": "brand A",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "color": "Red/White",
       "size": "S",
       "brand": "brand B",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
       "color": "Black/White",
       "size": "M",
       "brand": "brand C",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 7,
@@ -75,7 +81,8 @@
       "color": "Navy/White",
       "size": "L",
       "brand": "brand A",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 8,
@@ -86,7 +93,8 @@
       "color": "yellow",
       "size": "XL",
       "brand": "brand B",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 9,
@@ -97,7 +105,8 @@
       "color": "red",
       "size": "S",
       "brand": "brand C",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 11,
@@ -109,7 +118,8 @@
       "material": "100% Cotton",
       "image": "https://img3.junaroad.com/uiproducts/19260818/zoom_0-1674834024.jpg",
       "brand": "Nike",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 13,
@@ -121,7 +131,8 @@
       "material": "Genuine Leather",
       "image": "https://img3.junaroad.com/uiproducts/19260820/zoom_0-1674834024.jpg",
       "brand": "Tommy Hilfiger",
-      "category": "T-Shirts"
+      "category": "T-Shirts",
+      "quantity": 1
     },
     {
       "id": 14,
@@ -133,7 +144,8 @@
       "material": "80% Cotton, 20% Polyester",
       "image": "https://img3.junaroad.com/uiproducts/19147594/zoom_0-1673332391.jpg",
       "brand": "Polo",
-      "category": "Kurtas"
+      "category": "Kurtas",
+      "quantity": 1
     },
     {
       "id": 16,
@@ -145,7 +157,8 @@
       "material": "100% Cotton",
       "image": "https://img3.junaroad.com/uiproducts/19147566/zoom_0-1673247269.jpg",
       "brand": "Ralph Lauren",
-      "category": "kurta"
+      "category": "kurta",
+      "quantity": 1
     },
     {
       "id": 17,
@@ -156,7 +169,8 @@
       "material": "100% Cotton",
       "price": 49.99,
       "image": "https://img1.junaroad.com/stories/story_p_63de8e52adb8b819ee4cf17a-1676956818.jpeg",
-      "category": "Shirts"
+      "category": "Shirts",
+      "quantity": 1
     },
     {
       "id": 18,
@@ -167,7 +181,8 @@
       "material": "Cotton Blend",
       "price": 59.99,
       "image": "https://img3.junaroad.com/uiproducts/19148013/zoom_0-1673333176.jpg",
-      "category": "Shirts"
+      "category": "Shirts",
+      "quantity": 1
     },
     {
       "id": 19,
@@ -178,7 +193,8 @@
       "material": "Linen",
       "price": 69.99,
       "image": "https://img3.junaroad.com/uiproducts/18650571/zoom_0-1668069664.jpg",
-      "category": "kurta"
+      "category": "kurta",
+      "quantity": 1
     },
     {
       "id": 20,
@@ -189,7 +205,8 @@
       "material": "Cotton",
       "price": 79.99,
       "image": "https://img1.junaroad.com/stories/story_p_63f331becc8b5e0812fd693c-1676882366.jpeg",
-      "category": "Kurta"
+      "category": "Kurta",
+      "quantity": 1
     },
     {
       "id": 21,
@@ -200,7 +217,8 @@
       "material": "Cotton",
       "price": 89.99,
       "image": "https://img3.junaroad.com/uiproducts/15481089/zoom_0-1536231760.jpg",
-      "category": "Shirts"
+      "category": "Shirts",
+      "quantity": 1
     },
     {
       "id": 22,
@@ -211,7 +229,8 @@
       "material": "Silk",
       "price": 249.99,
       "image": "https://img3.junaroad.com/uiproducts/18030715/zoom_0-1633963063.jpg",
-      "category": "Shirts"
+      "category": "Shirts",
+      "quantity": 1
     },
     {
       "id": 23,
@@ -222,7 +241,8 @@
       "material": "Cotton",
       "price": 99.99,
       "image": "https://img1.junaroad.com/stories/story_p_63f05e91cc8b5e08304963a6-1676697233.jpeg",
-      "category": "Shirts"
+      "category": "Shirts",
+      "quantity": 1
     },
     {
       "id": 24,
@@ -233,7 +253,8 @@
       "material": "Cotton Blend",
       "price": 54.99,
       "image": "https://img3.junaroad.com/uiproducts/18620683/zoom_0-1667391315.jpg",
-      "category": "Shirts"
+      "category": "Shirts",
+      "quantity": 1
     },
     {
       "id": 25,
@@ -244,7 +265,8 @@
       "material": "Cotton",
       "price": 119.99,
       "image": "https://img3.junaroad.com/uiproducts/19223096/zoom_0-1674583448.jpg",
-      "category": "Shirts"
+      "category": "Shirts",
+      "quantity": 1
     },
     {
       "name": "test",
@@ -267,7 +289,8 @@
       "material": "Genuine Leather",
       "image": "https://example.com/womens-leather-jacket.jpg",
       "brand": "Zara",
-      "category": "Jackets"
+      "category": "Jackets",
+      "quantity": 1
     },
     {
       "id": 2,
@@ -279,7 +302,8 @@
       "material": "98% Cotton, 2% Spandex",
       "image": "https://example.com/womens-blue-jeans.jpg",
       "brand": "Levis",
-      "category": "Jeans"
+      "category": "Jeans",
+      "quantity": 1
     },
     {
       "id": 3,
@@ -291,7 +315,8 @@
       "material": "Faux Leather",
       "image": "https://example.com/womens-red-heels.jpg",
       "brand": "Steve Madden",
-      "category": "Shoes"
+      "category": "Shoes",
+      "quantity": 1
     },
     {
       "id": 1,
@@ -312,7 +337,8 @@
         "Green",
         "Yellow"
       ],
-      "stock": 50
+      "stock": 50,
+      "quantity": 1
     },
     {
       "id": "001",
@@ -322,7 +348,8 @@
       "size": "Small",
       "brand": "Zara",
       "category": "Dresses",
-      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image",
+      "quantity": 1
     },
     {
       "id": "002",
@@ -332,7 +359,8 @@
       "size": "Medium",
       "brand": "H&M",
       "category": "Jackets",
-      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image"
+      "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image",
+      "quantity": 1
     },
     {
       "id": "003",
@@ -422,7 +450,49 @@
       "password": "admin"
     }
   ],
-  "cart": [],
+
+  "users": [],
+  "cart": [
+    {
+      "id": 3,
+      "name": "V-Neck T-Shirt",
+      "description": "A flattering v-neck t-shirt",
+      "image": "https://img3.junaroad.com/uiproducts/18594838/zoom_0-1666006217.jpg",
+      "price": 18.99,
+      "color": "Navy",
+      "size": "L",
+      "brand": "brand C",
+      "category": "T-Shirts",
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "name": "Long Sleeve T-Shirt",
+      "description": "A comfortable and lightweight long sleeve t-shirt",
+      "image": "https://img1.junaroad.com/stories/story_p_63e7c213b388b00837d5898f-1676132883.jpeg",
+      "price": 22.99,
+      "color": "yellow",
+      "size": "XL",
+      "brand": "brand A",
+      "category": "T-Shirts",
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "name": "Classic White T-Shirt",
+      "description": "A comfortable and versatile classic white t-shirt",
+      "image": "https://img1.junaroad.com/stories/story_p_63e3997cfd1d3c6a4c544525-1675860348.jpeg",
+      "price": 20.99,
+      "color": "White",
+      "size": "S",
+      "brand": "brand A",
+      "category": "T-Shirts",
+      "quantity": 1
+    }
+  ],
+
+  
+
   "Order_completed": [
     {
       "id": 1,

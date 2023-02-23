@@ -22,6 +22,7 @@ import {
   import {useEffect,useState} from 'react'
 import { getsingleproduct } from '../Utils/apis';
 import { Product } from '../Utils/types';
+import { Modalfun } from '../Components/ProductComp/Modal';
   export default function SingleProduct() {
       let { id } = useParams();
     const [data,setdata] = useState<Product>()
@@ -36,7 +37,7 @@ let ndata=await getsingleproduct(id)
 myfun()
 }, [])
 
-console.log(data)
+
     return (
       <Container maxW={'7xl'}>
         <SimpleGrid
@@ -59,13 +60,16 @@ console.log(data)
           <Stack spacing={{ base: 6, md: 10 }}>
             <Box as={'header'}>
               <Heading
+             
+              textAlign={"start"}
                 lineHeight={1.1}
                 fontWeight={600}
                 fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}>
                {data?.name}
               </Heading>
               <Text
-                color={useColorModeValue('gray.900', 'gray.400')}
+               mt={"20px"}
+                color={useColorModeValue('black',"black")}
                 fontWeight={300}
                 fontSize={'2xl'}>
                 ${data?.price}USD
@@ -77,12 +81,12 @@ console.log(data)
               direction={'column'}
               divider={
                 <StackDivider
-                  borderColor={useColorModeValue('gray.200', 'gray.600')}
+                  borderColor={useColorModeValue('black', 'black')}
                 />
               }>
-              <VStack spacing={{ base: 4, sm: 6 }}>
+              <VStack spacing={{ base: 4, sm: 6 }} color="black">
                 <Text
-                  color={useColorModeValue('gray.500', 'gray.400')}
+                  color={useColorModeValue('black', 'black')}
                   fontSize={'2xl'}
                   fontWeight={'300'}>
                   {data?.description}
@@ -95,14 +99,14 @@ Typically, clothing is made of fabrics or textiles, but over time it has include
               <Box>
                 <Text
                   fontSize={{ base: '16px', lg: '18px' }}
-                  color={useColorModeValue('yellow.500', 'yellow.300')}
+                  color={useColorModeValue('blue', 'blue')}
                   fontWeight={'500'}
                   textTransform={'uppercase'}
                   mb={'4'}>
                   Features
                 </Text>
   
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} color="black">
                   <List spacing={2}>
                     <ListItem>Chronograph</ListItem>
                     <ListItem>Master Chronometer Certified</ListItem>{' '}
@@ -118,14 +122,14 @@ Typically, clothing is made of fabrics or textiles, but over time it has include
               <Box>
                 <Text
                   fontSize={{ base: '16px', lg: '18px' }}
-                  color={useColorModeValue('yellow.500', 'yellow.300')}
+                  color={useColorModeValue('blue', 'blue')}
                   fontWeight={'500'}
                   textTransform={'uppercase'}
                   mb={'4'}>
                   Product Details
                 </Text>
   
-                <List spacing={2}>
+                <List spacing={2} color="black">
                   <ListItem>
                     <Text as={'span'} fontWeight={'bold'}>
                       Between lugs:
@@ -179,19 +183,19 @@ Typically, clothing is made of fabrics or textiles, but over time it has include
               mt={8}
               size={'lg'}
               py={'7'}
-              bg={useColorModeValue('gray.900', 'gray.50')}
-              color={useColorModeValue('white', 'gray.900')}
+              bg={useColorModeValue('black',"black")}
+              color={useColorModeValue('white', 'white')}
               textTransform={'uppercase'}
               _hover={{
                 transform: 'translateY(2px)',
                 boxShadow: 'lg',
               }}>
-              Add to cart
+             <Modalfun id={data?.id} img={data?.image} name={data?.name} price={data?.price} />
             </Button>
   
             <Stack direction="row" alignItems="center" justifyContent={'center'}>
               <MdLocalShipping />
-              <Text>2-3 business days delivery</Text>
+              <Text color={"black"}>2-3 business days delivery</Text>
             </Stack>
           </Stack>
         </SimpleGrid>

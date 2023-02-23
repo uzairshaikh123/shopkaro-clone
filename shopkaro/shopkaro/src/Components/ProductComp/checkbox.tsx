@@ -7,9 +7,9 @@ interface str{
 
 const Checkboxfun = ({item}:str) => {
   return (
-    <CheckboxGroup colorScheme='green'>
+    <CheckboxGroup colorScheme='green' >
     <Stack spacing={[1, 5]} direction={['column']}>
-      <Checkbox>{item}</Checkbox>
+      <Checkbox isInvalid>{item}</Checkbox>
     </Stack>
   </CheckboxGroup>
   )

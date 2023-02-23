@@ -8,11 +8,14 @@ import {
     Icon,
     chakra,
     Tooltip,
+    Button,
+    Toast,
   } from '@chakra-ui/react';
   import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
   import { FiShoppingCart } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { Product } from '../../Utils/types';
+import { Modalfun } from './Modal';
   
   const data = {
     isNew: true,
@@ -30,6 +33,10 @@ import { Product } from '../../Utils/types';
   }
   
   function Rating({ rating, numReviews }: RatingProps) {
+
+
+
+
     return (
       <Box alignItems="center">
         {Array(5)
@@ -60,13 +67,17 @@ import { Product } from '../../Utils/types';
     data:Product
   }
   function ProductCard({data}:detpr) {
+    const handleadd=()=>{
+     
+    }
+    
     return (
 
-<Link to={`/product/${data.id}`}>
       <Flex p={50} w="fit-content">
         <Box
           bg={useColorModeValue('white', 'gray.800')}
           maxW="290px"
+          key={data.id}
           //   border="1px solid red"
           borderWidth="1px"
           rounded="lg"
@@ -74,27 +85,30 @@ import { Product } from '../../Utils/types';
         boxShadow="10px 5px 5px black"
         position="relative">
           {/* { (
-              <Circle
-              size="10px"
-              position="absolute"
+            <Circle
+            size="10px"
+            position="absolute"
               top={2}
               right={2}
               bg="red.200"
               />
             )} */}
-  
+  <Link to={`/product/${data.id}`}>
+
           <Image
           boxSize={"400px"}
           objectFit={"contain"}
-            src={data.image}
-            alt={`Picture of ${data.name}`}
-            roundedTop="lg"
-            />
+          src={data.image}
+          alt={`Picture of ${data.name}`}
+          roundedTop="lg"
+          />
+          </Link>
   
+            <Link to={`/product/${data.id}`}>
           <Box p="6">
             <Box alignItems="baseline">
               
-                <Badge rounded="full" px="2" fontSize="0.8em" colorScheme="red">
+                <Badge rounded="full" px="2" fontSize="0.8em" colorScheme="black" color="white">
                   New
                 </Badge>
            
@@ -110,16 +124,7 @@ import { Product } from '../../Utils/types';
               </Box>
              
              
-              <Tooltip
-                label="Add to cart"
-                bg="white"
-                placement={'top'}
-                color={'gray.800'}
-                fontSize={'1.2em'}>
-                <chakra.a href={'#'} display={'flex'}>
-                  <Icon as={FiShoppingCart} h={7} w={7} alignSelf={'center'} />
-                </chakra.a>
-              </Tooltip>
+            
             </Flex>
             <Box
                 fontSize="2xl"
@@ -139,10 +144,16 @@ import { Product } from '../../Utils/types';
               </Box>
             </Flex>
           </Box>
+                  </Link>
+          <Button width={"100%"}  height={"50px"} onClick={handleadd} bgColor={"#D3145A"}>
+          
+          <Modalfun id={data.id} img={data.image} name={data.name} price={data.price} />
+
+      </Button>
         </Box>
+                 
       </Flex>
                 
-                    </Link>
     );
   }
   
