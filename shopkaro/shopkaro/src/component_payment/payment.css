@@ -1,0 +1,11 @@
+.payment-page{
+    border: 1px solid red;
+    height: 80vh;
+    display: flex;
+}
+.payment-page > div{
+    border: 1px solid black;
+    height: auto;
+    width: 48%;
+    margin: auto;
+}
