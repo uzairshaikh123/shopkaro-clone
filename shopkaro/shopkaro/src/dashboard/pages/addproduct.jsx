@@ -8,6 +8,7 @@ const Addproduct = () => {
   const [formData, setFormData] = useState({
     name: '',
     price: '',
+    brand:'',
     quantity: '',
     size: '',
     description: '',
@@ -35,6 +36,7 @@ const Addproduct = () => {
   setFormData({
     name: '',
     price: '',
+    brand:'',
     quantity: '',
     size: '',
     description: '',
@@ -63,6 +65,13 @@ const Addproduct = () => {
         name="price"
         placeholder="Price"
         value={formData.price}
+        onChange={handleInputChange}
+      />
+       <input
+        type="text"
+        name="brand"
+        placeholder="Brand"
+        value={formData.brand}
         onChange={handleInputChange}
       />
       <input
