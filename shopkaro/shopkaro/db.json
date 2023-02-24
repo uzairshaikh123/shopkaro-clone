@@ -10,7 +10,7 @@
       "size": "S",
       "brand": "brand A",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 10
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "size": "M",
       "brand": "brand B",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 20
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "size": "L",
       "brand": "brand C",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 23
     },
     {
       "id": 4,
@@ -46,7 +46,8 @@
       "size": "XL",
       "brand": "brand A",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 33,
+      "newproduct":"new"
     },
     {
       "id": 5,
@@ -58,7 +59,8 @@
       "size": "S",
       "brand": "brand B",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount":49,
+      "newproduct":"new"
     },
     {
       "id": 6,
@@ -70,7 +72,8 @@
       "size": "M",
       "brand": "brand C",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 50,
+      "trending":true
     },
     {
       "id": 7,
@@ -82,7 +85,8 @@
       "size": "L",
       "brand": "brand A",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 10,
+      "trending":true
     },
     {
       "id": 8,
@@ -94,7 +98,7 @@
       "size": "XL",
       "brand": "brand B",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 2
     },
     {
       "id": 9,
@@ -106,7 +110,8 @@
       "size": "S",
       "brand": "brand C",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 5,
+      "newproduct":"new"
     },
     {
       "id": 11,
@@ -119,7 +124,8 @@
       "image": "https://img3.junaroad.com/uiproducts/19260818/zoom_0-1674834024.jpg",
       "brand": "Nike",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 10,
+      "trending":true
     },
     {
       "id": 13,
@@ -132,7 +138,8 @@
       "image": "https://img3.junaroad.com/uiproducts/19260820/zoom_0-1674834024.jpg",
       "brand": "Tommy Hilfiger",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 20,
+      "trending":true
     },
     {
       "id": 14,
@@ -145,7 +152,8 @@
       "image": "https://img3.junaroad.com/uiproducts/19147594/zoom_0-1673332391.jpg",
       "brand": "Polo",
       "category": "Kurtas",
-      "quantity": 1
+      "discount": 40,
+      "newproduct":"new"
     },
     {
       "id": 16,
@@ -158,7 +166,7 @@
       "image": "https://img3.junaroad.com/uiproducts/19147566/zoom_0-1673247269.jpg",
       "brand": "Ralph Lauren",
       "category": "kurta",
-      "quantity": 1
+      "discount": 20
     },
     {
       "id": 17,
@@ -170,7 +178,7 @@
       "price": 49.99,
       "image": "https://img1.junaroad.com/stories/story_p_63de8e52adb8b819ee4cf17a-1676956818.jpeg",
       "category": "Shirts",
-      "quantity": 1
+      "discount": 30
     },
     {
       "id": 18,
@@ -182,7 +190,7 @@
       "price": 59.99,
       "image": "https://img3.junaroad.com/uiproducts/19148013/zoom_0-1673333176.jpg",
       "category": "Shirts",
-      "quantity": 1
+      "discount":20
     },
     {
       "id": 19,
@@ -194,7 +202,7 @@
       "price": 69.99,
       "image": "https://img3.junaroad.com/uiproducts/18650571/zoom_0-1668069664.jpg",
       "category": "kurta",
-      "quantity": 1
+      "discount": 10
     },
     {
       "id": 20,
@@ -206,7 +214,7 @@
       "price": 79.99,
       "image": "https://img1.junaroad.com/stories/story_p_63f331becc8b5e0812fd693c-1676882366.jpeg",
       "category": "Kurta",
-      "quantity": 1
+      "discount": 5
     },
     {
       "id": 21,
@@ -218,7 +226,8 @@
       "price": 89.99,
       "image": "https://img3.junaroad.com/uiproducts/15481089/zoom_0-1536231760.jpg",
       "category": "Shirts",
-      "quantity": 1
+      "discount": 4,
+      "newproduct":"new"
     },
     {
       "id": 22,
@@ -230,7 +239,8 @@
       "price": 249.99,
       "image": "https://img3.junaroad.com/uiproducts/18030715/zoom_0-1633963063.jpg",
       "category": "Shirts",
-      "quantity": 1
+      "discount": 10,
+      "trending":true
     },
     {
       "id": 23,
@@ -242,7 +252,8 @@
       "price": 99.99,
       "image": "https://img1.junaroad.com/stories/story_p_63f05e91cc8b5e08304963a6-1676697233.jpeg",
       "category": "Shirts",
-      "quantity": 1
+      "discount": 10,
+      "newproduct":"new"
     },
     {
       "id": 24,
@@ -254,7 +265,7 @@
       "price": 54.99,
       "image": "https://img3.junaroad.com/uiproducts/18620683/zoom_0-1667391315.jpg",
       "category": "Shirts",
-      "quantity": 1
+      "discount": 90
     },
     {
       "id": 25,
@@ -266,16 +277,8 @@
       "price": 119.99,
       "image": "https://img3.junaroad.com/uiproducts/19223096/zoom_0-1674583448.jpg",
       "category": "Shirts",
-      "quantity": 1
-    },
-    {
-      "name": "test",
-      "price": "223",
-      "quantity": "23",
-      "size": "3",
-      "description": "sadfsedf",
-      "image": "https://sdf.com",
-      "id": 26
+      "discount": 80,
+      "trending":true
     }
   ],
   "womens": [
@@ -290,7 +293,7 @@
       "image": "https://example.com/womens-leather-jacket.jpg",
       "brand": "Zara",
       "category": "Jackets",
-      "quantity": 1
+      "discount": 1
     },
     {
       "id": 2,
@@ -303,7 +306,7 @@
       "image": "https://example.com/womens-blue-jeans.jpg",
       "brand": "Levis",
       "category": "Jeans",
-      "quantity": 1
+      "discount": 1
     },
     {
       "id": 3,
@@ -316,7 +319,7 @@
       "image": "https://example.com/womens-red-heels.jpg",
       "brand": "Steve Madden",
       "category": "Shoes",
-      "quantity": 1
+      "discount": 1
     },
     {
       "id": 1,
@@ -338,7 +341,7 @@
         "Yellow"
       ],
       "stock": 50,
-      "quantity": 1
+      "discount": 1
     },
     {
       "id": "001",
@@ -349,7 +352,7 @@
       "brand": "Zara",
       "category": "Dresses",
       "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image",
-      "quantity": 1
+      "discount": 1
     },
     {
       "id": "002",
@@ -360,7 +363,7 @@
       "brand": "H&M",
       "category": "Jackets",
       "image": "https://dummyimage.com/600x400/000/fff&text=Product+Image",
-      "quantity": 1
+      "discount": 1
     },
     {
       "id": "003",
@@ -453,7 +456,8 @@
       "size": "L",
       "brand": "brand C",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount":"30%"
+    
     },
     {
       "id": 4,
@@ -465,7 +469,7 @@
       "size": "XL",
       "brand": "brand A",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 1
     },
     {
       "id": 1,
@@ -477,7 +481,7 @@
       "size": "S",
       "brand": "brand A",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 1
     },
     {
       "id": 5,
@@ -489,7 +493,7 @@
       "size": "S",
       "brand": "brand B",
       "category": "T-Shirts",
-      "quantity": 1
+      "discount": 1
     }
   ],
   "Order_completed": [
@@ -515,7 +519,7 @@
       "name": "test brand",
       "price": "2332",
       "brand": "test brand",
-      "quantity": "232",
+      "discount": "232",
       "size": "3",
       "description": "test brand",
       "image": "https://brand.com",

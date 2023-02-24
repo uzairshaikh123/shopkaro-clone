@@ -108,8 +108,8 @@ import { Modalfun } from './Modal';
           <Box p="6">
             <Box alignItems="baseline">
               
-                <Badge rounded="full" px="2" fontSize="0.8em" colorScheme="black" color="white">
-                  New
+                <Badge bgColor={"black"}  color={"white"} rounded="full" px="2" fontSize="0.8em" colorScheme="black">
+                 {data?.newproduct}
                 </Badge>
            
             </Box>

@@ -31,6 +31,7 @@ import {
   } from '@chakra-ui/icons';
   import { HiShoppingCart ,HiSearch ,HiPencil} from "react-icons/hi";
 import logo from '../Assets/logo.png'
+import {Link as RLink} from 'react-router-dom'
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
   
@@ -83,7 +84,10 @@ import logo from '../Assets/logo.png'
                 <Stack display="flex" gap="20px" direction={'row'}>
                   <HiPencil size={27} />
                   <HiSearch size={27} />
+                  <RLink to="/cart">
+
                   <HiShoppingCart size={27} />
+                  </RLink>
                 </Stack>
                 <Menu>
               <MenuButton
@@ -210,7 +214,11 @@ import logo from '../Assets/logo.png'
               {label}
             </Heading>
             {subLabel && subLabel.map((childs)=>(
+                
+                
+                <RLink to="/products">
                 <Text fontSize={15}>{childs}</Text>
+                </RLink>
             ))}
             
           </Box>
