@@ -10,4 +10,17 @@ export interface Product{
    "color": string,
    "rating":string;
    "quantity":number;
+   "discount"?: number,
+    "newproduct"?:string,
+    "trending"?:boolean
+
+
+}
+
+export interface sort{
+
+val:string | undefined,
+status:boolean | undefined
+
+
 }

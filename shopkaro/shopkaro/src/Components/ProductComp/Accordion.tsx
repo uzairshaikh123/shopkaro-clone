@@ -10,12 +10,14 @@ import {
   } from '@chakra-ui/react'
 import { MinusIcon,AddIcon } from '@chakra-ui/icons'
 import Checkboxfun from './checkbox'
+import { sort } from '../../Utils/types';
 
 interface data{
-    data:String[];
+    data:string[];
+    handlesort:(obj:sort)=>void
 }
 
-const Accordionfun = ({data}:data) => {
+const Accordionfun = ({data,handlesort}:data) => {
    
   return (
     <Accord allowMultiple>
@@ -37,9 +39,9 @@ const Accordionfun = ({data}:data) => {
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-            {data.map((item:String,i)=>{
+            {data.map((item,i)=>{
               
-        return  i>0 && <Checkboxfun key={i}  item={item}/>
+        return  i>0 && <Checkboxfun handlesort={handlesort} key={i}  item={item}/>
             })}
         </AccordionPanel>
       </>

@@ -22,9 +22,9 @@ dispatch(getcartdatafun())
 },[])
 
 
-console.log(cart)
+
   return (
-    <div className='cart' style={{width:"100%",lineHeight:"35px",backgroundColor:"white"}}>
+    <div className='cart' style={{width:"100%",lineHeight:"35px",backgroundColor:"white",marginTop:"50px"}}>
 
  <div style={{width:"100%",display:"flex",flexWrap:"wrap",justifyContent:"center",gap:"15px"}}>
     {loading?<Loadingfun />:error?<h1>Error...</h1>:<div style={{width:"50%",color:"black",height:"auto",boxShadow:"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",display:"flex",flexDirection:'column',justifyContent:"space-evenly",gap:"10px"}}>
