@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, useBreakpointValue,Image,Link } from "@chakra-ui/react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 const settings = {
   dots: true,
@@ -74,7 +74,7 @@ export default function MainCarousel() {
       {/* Slider */}
       {/* <Link href={"#"}> */}
         {/* <Slider {...settings} ref={(slider) => setSlider(slider)} > */}
-        <Slider {...settings} >
+        {/* <Slider {...settings} >
           {cards.map((card, index) => (
             <Image
               key={index}
@@ -84,7 +84,7 @@ export default function MainCarousel() {
               style={{width:"auto", height:"auto" , display:"block", verticalAlign:"bottom"}}
             />
           ))}
-        </Slider>
+        </Slider> */}
       {/* </Link> */}
     </Box>
   );
