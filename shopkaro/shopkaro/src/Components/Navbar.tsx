@@ -30,7 +30,7 @@ import {
     ChevronRightIcon,
   } from '@chakra-ui/icons';
   import { HiShoppingCart ,HiSearch ,HiPencil} from "react-icons/hi";
-
+import logo from '../Assets/logo.png'
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
   
@@ -65,7 +65,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-             <Image src='..\public\shopkaro-logo.png' alt='logo' />
+             <Image w={"120px"}  h={"50px"} src={logo} alt='logo' />
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

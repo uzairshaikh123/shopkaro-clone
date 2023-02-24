@@ -11,7 +11,7 @@ import {
   
 } from "@chakra-ui/react";
 import { BsHeart ,BsWhatsapp} from "react-icons/bs";
-
+import logo from '../Assets/logo.png'
 export default function Main() {
   const DataMain = [
     {

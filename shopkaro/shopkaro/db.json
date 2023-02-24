@@ -441,16 +441,6 @@
       "address": "hajipur"
     }
   ],
-  "users": [
-    {
-      "id": 1,
-      "name": "Admin",
-      "email": "vicky@gmail.com",
-      "username": "admin",
-      "password": "admin"
-    }
-  ],
-
   "users": [],
   "cart": [
     {
@@ -488,11 +478,20 @@
       "brand": "brand A",
       "category": "T-Shirts",
       "quantity": 1
+    },
+    {
+      "id": 5,
+      "name": "color-Block T-Shirt",
+      "description": "A trendy color-block t-shirt",
+      "image": "https://img3.junaroad.com/uiproducts/16943495/zoom_0-1582023272.jpg",
+      "price": 26.99,
+      "color": "Red/White",
+      "size": "S",
+      "brand": "brand B",
+      "category": "T-Shirts",
+      "quantity": 1
     }
   ],
-
-  
-
   "Order_completed": [
     {
       "id": 1,

@@ -7,6 +7,7 @@ import { inistate } from '../Redux/Cart/cart.reducer'
 import { UseAppDispatch, UseAppSelector } from '../Redux/store'
 import { Product } from '../Utils/types'
 // import { getcartdata } from '../Utils/apis'
+import '../CSS/cart.css'
 
 const CartPage = () => {
 
