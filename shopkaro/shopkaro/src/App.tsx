@@ -14,16 +14,17 @@ function App() {
   return (
 
 
-    
+    <>
 
-     <GoogleOAuthProvider clientId="369991425272-n1fpb6hpeds2mp83qef46ftqih1ah03g.apps.googleusercontent.com">
 <Navbar />
+     <GoogleOAuthProvider clientId="369991425272-n1fpb6hpeds2mp83qef46ftqih1ah03g.apps.googleusercontent.com">
   
 
 
 <AllRoutes />
 
   </GoogleOAuthProvider>
+    </>
 
   );
 }
