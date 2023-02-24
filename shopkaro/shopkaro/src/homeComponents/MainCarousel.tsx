@@ -1,14 +1,7 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
-import { Box, useBreakpointValue,Image,Link } from "@chakra-ui/react";
-import Slider from 'react-slick';
-=======
 
 import { Box, useBreakpointValue,Image,Link } from "@chakra-ui/react";
 
->>>>>>> 9273c6c6b21bed15b1aa9262237ad98ebeb5f81c
-
-import { Box, useBreakpointValue,Image,Link } from "@chakra-ui/react";
  import Slider from "react-slick";
 const settings = {
   dots: true,
