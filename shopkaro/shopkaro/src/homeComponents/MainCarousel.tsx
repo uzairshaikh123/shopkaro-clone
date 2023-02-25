@@ -22,13 +22,13 @@ const settings = {
 // }
 
 export default function MainCarousel() {
-  let [slider, setSlider] = useState<any>(0);
-  const top = useBreakpointValue({ base: "90%", md: "50%" });
-  const side = useBreakpointValue({ base: "30%", md: "40px" });
+ // let [slider, setSlider] = useState<any>(0);
+ // const top = useBreakpointValue({ base: "90%", md: "50%" });
+ // const side = useBreakpointValue({ base: "30%", md: "40px" });
 
   const cards = [
     {
-      image:"https://img1.junaroad.com//assets/images/mobileNotif/img-1676438894037.jpg?crsl_pos=0",
+      image:"https://img1.junaroad.com//assets/images/mobileNotif/img-1676569571429.jpg?crsl_pos=0",
     },
     {
       image:"https://img0.junaroad.com/images/banners/B2G1_13january2023_1673587401792.jpg?crsl_pos=0",
@@ -57,6 +57,12 @@ export default function MainCarousel() {
     {
       image:"https://img1.junaroad.com//assets/images/mobileNotif/img-1652694665568.jpg?crsl_pos=0",
     },
+    {
+      image:"https://img1.junaroad.com//assets/images/mobileNotif/img-1677239926933.jpg?crsl_pos=0",
+    },
+    {
+      image:"https://img1.junaroad.com//assets/images/mobileNotif/img-1676438894037.jpg?crsl_pos=0",
+    },
   ];
 
   return (
@@ -73,11 +79,9 @@ export default function MainCarousel() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
 
-    
-     
        <Link href={"#"}> 
-         <Slider {...settings} ref={(slider) => setSlider(slider)} >
-
+         {/* <Slider {...settings} ref={(slider) => setSlider(slider)} > */
+    
          <Slider {...settings} >
 
           {cards.map((card, index) => (
@@ -91,16 +95,7 @@ export default function MainCarousel() {
           ))}
 
         </Slider>
-
-        {/* </Slider> */}
-        </Slider>
     </Link> 
-
-
-      
-
-
     </Box>
   );
 };
-
