@@ -26,6 +26,13 @@ return axios.post(`http://localhost:8080/cart`).then((res)=>{
 
 }
 
+export const updateqnt=(obj:Product,id:number | undefined,qty:number| undefined,total:number | undefined)=>{
+   return axios.patch(`http://localhost:8080/cart/${id}`,{...obj,quantity:qty,price:total}).then(()=>{
+   
+   
 
+
+   })
+}
 
 

@@ -10,6 +10,7 @@ import {
     Tooltip,
     Button,
     Toast,
+    textDecoration,
   } from '@chakra-ui/react';
   import { BsStar, BsStarFill, BsStarHalf } from 'react-icons/bs';
   import { FiShoppingCart } from 'react-icons/fi';
@@ -76,7 +77,7 @@ import { Modalfun } from './Modal';
       <Flex p={50} w="fit-content">
         <Box
           bg={useColorModeValue('white', 'gray.800')}
-          maxW="290px"
+          maxW={"260px"}
           key={data.id}
           //   border="1px solid red"
           borderWidth="1px"
@@ -138,9 +139,14 @@ import { Modalfun } from './Modal';
               {/* <Rating rating={data.rating} numReviews={data.numReviews} /> */}
               <Box fontSize="2xl" color={useColorModeValue('gray.800', 'white')}>
                 <Box as="span" color={'white'} fontSize="lg">
-                  $
+                  
                 </Box>
-                {data.price}
+               <span>
+               ₹ {data.price}{" "} <span style={{textDecoration:"line-through",opacity:"0.7"}}>
+               ₹ {Math.floor(Number(data.price))+30}
+                 </span>
+                </span>
+                <h3>Size : {data.size}</h3>
               </Box>
             </Flex>
           </Box>

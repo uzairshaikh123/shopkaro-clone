@@ -80,7 +80,7 @@ export default function MainCarousel() {
       />
 
        <Link href={"#"}> 
-         {/* <Slider {...settings} ref={(slider) => setSlider(slider)} > */
+         {/* <Slider {...settings} ref={(slider) => setSlider(slider)} > */}
     
          <Slider {...settings} >
 
