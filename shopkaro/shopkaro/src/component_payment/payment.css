@@ -1,11 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pseudo-nav{
+    width: 100%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.pseudo-nav img{
+    margin: 5px;
+    padding-bottom: 5px;
+    width: 10%;
+}
 .payment-page{
-    border: 1px solid red;
-    height: 80vh;
+    height: 110vh;
     display: flex;
+    justify-content: space-between;
 }
 .payment-page > div{
-    border: 1px solid black;
     height: auto;
-    width: 48%;
-    margin: auto;
+    width: 49.5%;
+    padding: 15px;
+}
+.address-info{
+    background-color: #eeeeee;
+}
+.offer-on-payment{
+    padding: 5px;
+    background-color: rgb(165, 220, 241);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.image-cap img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.flat{
+    font-weight: 500;
+    color: black;
+}
+.methods{
+    color: black;
+}
+#card-info{
+    color: black;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.card-form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+.card-form input {
+    border-bottom: 1px solid rgb(153 204 51);
+    margin: 8px auto;
+    width: 90%;
+    padding: 5px;
+}
+#qr, .confirm-order{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.option-pay, .qr-form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white;
+    background: rgb(153 204 51);
+    cursor: pointer;
+}
+
+.confirm-order>button{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+    padding: 8px 13px;
+    background: rgb(153 204 51);
+    color: #ffffff;
+    cursor: pointer;
+}
+.confirm-order>button:hover, .option-pay:hover{
+    background: rgb(100, 125, 51);
+}
+
+/* Payment Successfull */
+
+.Payment-Successfull{
+    width: 50vh;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: white;
+    position: absolute;
+    top : 13rem;
+    left: 29rem;
+}
+.Payment-Successfull > img{
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .pseudo-nav img{
+        width: 15%;
+    }
+    .payment-page{
+        flex-direction: column;
+        height: 97vh;
+    }
+    .payment-page > div{
+        width: 95%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .Payment-Successfull{
+        top : 50rem;
+        left: 15rem;
+    }
+}
+
+@media (max-width: 443px) {
+    .payment-page{
+        flex-direction: column;
+        height: 110vh;
+    }
+    .pseudo-nav img{
+        width: 27%;
+    }
+    .Payment-Successfull{
+        top : 50rem;
+        left: 10rem;
+    }
 }
