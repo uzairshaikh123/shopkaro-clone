@@ -36,6 +36,7 @@ const CartPage = () => {
       }}
     >
       <div
+        className="cart-parent"
         style={{
           width: "100%",
           display: "flex",
@@ -50,6 +51,7 @@ const CartPage = () => {
           <h1>Error...</h1>
         ) : (
           <div
+            className="added-products"
             style={{
               width: "50%",
               color: "black",
@@ -66,6 +68,7 @@ const CartPage = () => {
             {cart.map((item: Product) => {
               return (
                 <div
+                  className="product-card"
                   key={item.id}
                   style={{
                     display: "flex",
@@ -81,7 +84,10 @@ const CartPage = () => {
                       alt=""
                     />
                   </div>
-                  <div style={{ position: "absolute", left: "20%" }}>
+                  <div
+                    className="detailed-product"
+                    style={{ position: "absolute", left: "20%" }}
+                  >
                     <h2 style={{ color: "#D3145A", fontSize: "20px" }}>
                       {item.name}
                     </h2>
@@ -122,6 +128,7 @@ const CartPage = () => {
           </div>
         )}
         <div
+          className="summary"
           style={{
             width: "35%",
             color: "black",

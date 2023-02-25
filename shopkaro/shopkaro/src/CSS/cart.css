@@ -1,0 +1,37 @@
+.removecart:hover{
+    color: red;
+}
+.cart-parent{
+    margin-top: 6rem;
+}
+
+@media (max-width: 800px) {
+    .cart-parent{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .added-products{
+        width: 90% !important;
+        margin: 0 auto;
+    }
+    .detailed-product{
+        left: 32% !important;
+    }
+    .summary{
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 607px) {
+    .product-card{
+        flex-direction: column;
+    }
+    .product-card img{
+        margin: 1rem 0 0 1rem;
+    }
+    .detailed-product{
+        left: 50% !important;
+        margin-top: 2rem;
+    }
+}

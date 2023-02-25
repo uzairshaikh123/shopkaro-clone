@@ -24,7 +24,7 @@
 .payment-page > div{
     height: auto;
     width: 49.5%;
-    padding: 15px;
+    padding: 31px 15px 0 15px;
 }
 .address-info{
     background-color: #eeeeee;
