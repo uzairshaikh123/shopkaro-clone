@@ -68,12 +68,12 @@ console.log(profile)
                             <label htmlFor="" typeof="checkbox">
                                 Remember me
                             </label>
-                            <button type='submit' style={{ backgroundColor: "#0ef" }}>Login</button>
+                            <button type='submit' style={{ backgroundColor: "#0ef" }} className='btn'>Login</button>
                             <div className="signUp-link">
                                 <p>Dont't have an account? <a href="" className='signUpBtn-link' onClick={handletoggle}>Sign Up</a></p>
                             </div>
                             <div style={{ display: "flex", justifyContent: "center" }}>
-                                <button style={{width:"40px"}} onClick={() => login()}>
+                                <button  className='btn' style={{width:"40px"}} onClick={() => login()}>
                                    
                                     <img style={{width:"40px"}} src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="" />
                                 </button>
@@ -104,12 +104,12 @@ console.log(profile)
                             <label htmlFor="" typeof="checkbox">
                                 I agree to the terms and conditions
                             </label>
-                            <button type='submit' style={{ backgroundColor: "#0ef" }}>Sign Up</button>
+                            <button type='submit' style={{ backgroundColor: "#0ef" }} className='btn'>Sign Up</button>
                             <div className="signUp-link">
                                 <p>Already have an account? <a href="#" className='signInBtn-link' onClick={handletoggle}>Sign In</a></p>
                             </div>
                             <div style={{ display: "flex", justifyContent: "center" }}>
-                                <button style={{width:"40px"}} onClick={() => login()}>
+                                <button  style={{width:"40px"}} onClick={() => login()}>
                                    
                                     <img style={{width:"40px"}} src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="" />
                                 </button>

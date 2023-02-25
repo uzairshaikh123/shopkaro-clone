@@ -22,9 +22,9 @@ const settings = {
 // }
 
 export default function MainCarousel() {
-  // let [slider, setSlider] = useState<any>(0);
-  // const top = useBreakpointValue({ base: "90%", md: "50%" });
-  // const side = useBreakpointValue({ base: "30%", md: "40px" });
+ // let [slider, setSlider] = useState<any>(0);
+ // const top = useBreakpointValue({ base: "90%", md: "50%" });
+ // const side = useBreakpointValue({ base: "30%", md: "40px" });
 
   const cards = [
     {
@@ -80,8 +80,8 @@ export default function MainCarousel() {
       />
 
        <Link href={"#"}> 
-         {/* <Slider {...settings} ref={(slider) => setSlider(slider)} > */}
-
+         {/* <Slider {...settings} ref={(slider) => setSlider(slider)} > */
+    
          <Slider {...settings} >
 
           {cards.map((card, index) => (

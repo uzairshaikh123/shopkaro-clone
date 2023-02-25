@@ -1,4 +1,7 @@
 /* index page css here  */
+/* .body{
+    background-color: gray;
+} */
 .main{
     width: 90%;
     height: 90vh;
@@ -7,6 +10,8 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     display: flex;
     margin: 30px auto 0px auto;
+    background-color: white;
+    /* border: 1px solid whitesmoke; */
 }
 .nav{
     width: 190px;
@@ -29,11 +34,10 @@ border-top-left-radius: 20px;
 }
 .nav a{
     font-size: large;
-    color: rgb(221, 217, 217);
-    font-weight: 400;
-    margin-top: 8px;
+    color: rgb(229, 222, 222);
+    font-weight: 500;
     width: 100%;
-    padding: 10px 20px;
+    padding: 5px 10px 5px 30px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -41,7 +45,7 @@ border-top-left-radius: 20px;
     color: rgba(102, 0, 255, 0.78);
     background: white;
 }
-.nav a:active{
+.nav .link{
     color: rgba(102, 0, 255, 0.78);
     background: white;
 }
@@ -63,6 +67,7 @@ border-top-left-radius: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto);
+    margin-left: -10%;
 }
 .grd div{
     display: flex;
@@ -74,10 +79,9 @@ border-top-left-radius: 20px;
     width: 130px;
     height: 130px;
     display: flex;
-    justify-content: center;
-align-items: center;
+    cursor: pointer;
 border-radius: 50%;
-font-size: 50px;
+font-size: 30px;
 font-weight: 900;
 /* color: gray; */
 color: white;
@@ -87,4 +91,94 @@ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     color:gray;
     font-weight: 400;font-size: 25px;
     padding: 20px;
+}
+
+/* add products */
+.frm{
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    margin: 10px auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.frm form{
+    width: 40%;
+    height: 90%;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #8738FF;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.frm form input,.frm form select{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    outline: none;
+    padding: 20px;
+}
+.frm form select::placeholder{
+    padding: 10px;
+    color: gray;
+}
+.add{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: #8738FF;
+    border-radius: 20px;
+    font-size: large;
+    margin-top: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.add:hover{
+    background-color: #8738FF;
+    color: white;
+    border: 1px solid white;
+}
+
+/* products list  */
+.list{
+    width: 72%;
+    height:50%;
+    margin: -46% -10% 10px 21%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.list thead {
+    width: 100%;
+}
+.list thead tr{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    background-color: #8738FF;
+    color: #f0f0f0;
+}
+.list tbody{
+    padding: 10px;
+    overflow-y: scroll;
+}
+.list tr{
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px;
+    height: 40px;
+}
+.dlt{
+    background-color: red;
+    color: white;
+    width: 90px;
+    text-align: center;
+    font-weight: 200;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.scrl{
+    width: 100%;
+    padding: 20px;
+    overflow: scroll;
 }

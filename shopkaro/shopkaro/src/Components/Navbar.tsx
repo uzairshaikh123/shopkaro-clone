@@ -194,34 +194,34 @@ const DesktopNav = () => {
   );
 };
 
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
-  return (
-    <Link
-      href={href}
-      role={'group'}
-      display={'block'}
-      p={2}
-      rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
-      <Stack direction={'row'} align={'center'}>
-        <Box>
-          <Heading
-            transition={'all .3s ease'}
-            _groupHover={{ color: 'pink.400' }}
-            fontWeight={500}
-            fontSize={18}
-            textAlign="left">
-            {label}
-          </Heading>
-          {subLabel && subLabel.map((childs)=>(
-              
-              
-              <RLink to="/products">
-              <Text fontSize={15}>{childs}</Text>
-              </RLink>
-          ))}
-          
-        </Box>
+  const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+    return (
+      <Link
+        href={href}
+        role={'group'}
+        display={'block'}
+        p={2}
+        rounded={'md'}
+        _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+        <Stack direction={'row'} align={'center'}>
+          <Box>
+            <Heading
+              transition={'all .3s ease'}
+              _groupHover={{ color: 'pink.400' }}
+              fontWeight={500}
+              fontSize={18}
+              textAlign="left">
+              {label}
+            </Heading>
+            {subLabel && subLabel.map((childs)=>(
+                
+                
+                <RLink to="/products">
+                <Text fontSize={15}>{childs}</Text>
+                </RLink>
+            ))}
+            
+          </Box>
         {/* <Flex
           transition={'all .3s ease'}
           transform={'translateX(-10px)'}
