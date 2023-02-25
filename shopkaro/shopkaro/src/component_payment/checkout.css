@@ -1,6 +1,50 @@
-.block-1{
-    border: 1px solid green;
+.div-del h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-info{
+    margin-top: 12px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: white;
+    overflow-block: auto;
+}
+.block-1, .block-5{
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
 }
-.block-1{}
+.block-1 input, .block-5 input{
+    border-bottom: 1.5px solid #eeeeee;
+    width: 48%;
+}
+.block-2, .block-3, .block-4{
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 10px;
+}
+.block-2 input:focus, .block-3 input:focus, .block-4 input:focus{
+    border: 2px solid rgb(153 204 51);
+    width: 100%;
+}
+.block-6{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#addr{
+    width: 50%;
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+}
+#hindi, #my-order-help{
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 1.5px solid rgb(153 204 51);
+}
+p{
+    color: #707070;
+}
+.second-p{
+    text-align: center;
+    font-size: 14;
+}
