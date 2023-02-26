@@ -91,6 +91,7 @@ export default function MainCarousel() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
 
+
       <Link href={"#"}>
         {/* <Slider {...settings} ref={(slider) => setSlider(slider)} > */}
 

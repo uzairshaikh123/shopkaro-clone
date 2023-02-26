@@ -1,5 +1,7 @@
 .removecart:hover{
-    color: red;
+
+color: red;
+
 }
 .cart-parent{
     margin-top: 6rem;
@@ -34,4 +36,5 @@
         left: 50% !important;
         margin-top: 2rem;
     }
+
 }

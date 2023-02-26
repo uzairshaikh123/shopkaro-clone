@@ -6,26 +6,77 @@ import { getcartdatafun } from "../Redux/Cart/cart.action";
 import { inistate } from "../Redux/Cart/cart.reducer";
 import { UseAppDispatch, UseAppSelector } from "../Redux/store";
 import { Product } from "../Utils/types";
-// import { getcartdata } from '../Utils/apis'
-import "../CSS/cart.css";
 import { redirect } from "react-router";
 import { useNavigate } from "react-router-dom";
+// import { getcartdata } from '../Utils/apis'
+
+import '../CSS/cart.css'
+import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 const CartPage = () => {
-  const store = UseAppSelector((store) => store);
-  const navigate = useNavigate();
+    
+    const store = UseAppSelector((store)=>store)
+    let {loading,error,cart}:inistate=(store.cartreducer)
+   const navigate = useNavigate();
+    const [price,setprice] = useState<number>(0)
+    
+    
+const [state,setstate] = useState<number>(0)
 
-  let { loading, error, cart }: inistate = store.cartreducer;
-  const dispatch = UseAppDispatch();
-  useEffect(() => {
+const dispatch = UseAppDispatch()
+
+ useEffect(() => {
     dispatch(getcartdatafun());
   }, []);
+
+
+useEffect(()=>{
+
+dispatch(getcartdatafun()).then(()=>{
+    let totalprice=cart.reduce((acc,item)=>{
+
+        return acc+item.price
+    
+    },0)
+    setprice(totalprice)
+})
+
+if(loading==false){
+    let totalprice=cart.reduce((acc,item)=>{
+
+        return acc+item.price
+    
+    },0)
+    setprice(totalprice)
+
+}
+
+
+
+
+
+},[state])
+
+
+
+
+const handledelete=(id:number)=>{
+
+axios.delete(`http://localhost:8080/cart/${id}`).then(()=>{
+setstate(state+1)
+})
+
+}
+
+
 
   const redirectTopayment = (): void => {
     navigate("/payment");
   };
 
   return (
+  
     <div
       className="cart"
       style={{
@@ -156,6 +207,7 @@ const CartPage = () => {
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <span style={{ color: "#D3145A", fontSize: "25px" }}>
               Amount Payable{" "}
+
             </span>
             <span style={{ color: "#D3145A", fontSize: "25px" }}>₹ 25</span>
           </div>
@@ -177,7 +229,40 @@ const CartPage = () => {
             BUY NOW
           </button>
         </div>
-      </div>
+
+
+    </div>
+})}
+
+    </div>}
+    {cart.length==0?<h1>
+        <img src="https://www.krosfitsports.com/public/empty-cart.gif" alt="" />
+    </h1>:<div style={{width:"35%",color:"black",padding:"40px",fontSize:"15px",textDecoration:"bold",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>
+<h1 style={{fontSize:"30px"}}>Summary</h1>
+<br />
+
+<div style={{display:"flex",justifyContent:"space-between"}}>
+    <span>Total Price</span>
+    <span>₹ {price}</span>
+</div>
+<div style={{display:"flex",justifyContent:"space-between"}}>
+    <span>Shipping Charges</span>
+    <span style={{color:"green"}}>Free</span>
+</div>
+<div style={{display:"flex",justifyContent:"space-between"}}>
+    <span>Applicable Tax and Charges</span>
+    <span>+ ₹ 90</span>
+</div>
+<div style={{display:"flex",justifyContent:"space-between"}}>
+    <span style={{color:"#D3145A",fontSize:"25px"}}>Amount Payable </span>
+    <span style={{color:"#D3145A",fontSize:"25px"}}>₹ {price+90}</span>
+</div>
+
+<button style={{height:"50px",width:"100%",border:"none",backgroundColor:"#D3145A",color:"white",display:"block",margin:"auto",marginTop:"20px",fontSize:"30px",borderRadius:"5px"}}>BUY NOW</button>
+
+    </div>}
+ </div>
+
     </div>
   );
 };

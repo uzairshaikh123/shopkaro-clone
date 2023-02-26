@@ -68,6 +68,7 @@ export default function Navbar() {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
+
             <RLink to="/">
               <Image w={"140px"}  h={"50px"} src={logo} alt='logo' />
             </RLink>
@@ -123,12 +124,16 @@ export default function Navbar() {
               </Stack>
             </MenuButton>
             <MenuList>
-              <MenuItem>
-                <RLink to="Signin">Sign In</RLink>
-              </MenuItem>
-              <MenuItem>
-                <RLink to="#">Admin</RLink>
-              </MenuItem>
+
+              <RLink to="/signin">
+
+              <MenuItem>Sign In</MenuItem>
+              </RLink>
+<RLink to="signin">
+
+
+              <MenuItem>Admin Login</MenuItem>
+</RLink>
             </MenuList>
           </Menu>
            
@@ -177,10 +182,13 @@ const DesktopNav = () => {
   return (
     <Stack direction={'row'} spacing={4} alignItems="center">
       {NAV_ITEMS.map((navItem) => (
+        <RLink to="/products">
+
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
               <Link
+              
                 p={2}
                 href={navItem.href ?? '#'}
                 fontSize={'md'}
@@ -202,15 +210,19 @@ const DesktopNav = () => {
                 p={4}
                 rounded={'xl'}
                 minW={'sm'}>
+                  <RLink to='/products'>
+
                 <Stack>
                   {navItem.children.map((child) => (
                     <DesktopSubNav  key={child.label} {...child} />
-                  ))}
+                    ))}
                 </Stack>
+                    </RLink>
               </PopoverContent>
             )}
           </Popover>
         </Box>
+              </RLink>
       ))}
     </Stack>
   );
@@ -226,6 +238,7 @@ const DesktopNav = () => {
         rounded={'md'}
         _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
+          
           <Box>
             <Heading
               transition={'all .3s ease'}
@@ -303,6 +316,9 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+      <RLink to="/products">
+            
+          
         <Stack
           mt={2}
           pl={4}
@@ -317,6 +333,8 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
               </Link>
             ))}
         </Stack>
+        </RLink>
+        
       </Collapse>
     </Stack>
   );

@@ -9,7 +9,7 @@ export const getdatafun =():any=> (dispatch:AppDispatch)=>{
         
         dispatch({type:types.GET_PRODUCT_SUCCESS,payload:res.data})
         
-        
+        return res.data
     }).catch(()=>{
         dispatch({type:types.GET_PRODUCT_ERROR})
 
