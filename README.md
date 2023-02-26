@@ -22,6 +22,10 @@ Shopkaro uses a variety of technologies to provide a seamless shopping experienc
 - CSS
 
  ## Admin Dashboard
+ 
+ ### Login Credentials
+ - Username: admin@shopkaro.com
+ - Password: adminuser
 
 Here is deployment link - [admin live](https://shopkaro-admin.vercel.app/dashboard)
 
