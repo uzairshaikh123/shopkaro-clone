@@ -204,8 +204,8 @@ const Productfun = () => {
 
 
                 </Box>
-                <Box  w={{base:"48%",sm:"50%",md:"50%",xl:"78%"}} border="1px solid red">
-                    <h1 style={{ textAlign: "center", color: "black" }}>Mens Products</h1>
+                <Box  w={{base:"48%",sm:"50%",md:"50%",xl:"78%"}}>
+                    <h1 style={{ textAlign: "center", color: "black" ,backgroundColor:"#D3145A",height:"40px",alignItems:"center",fontSize:"25px"}}>Mens Products</h1>
 
 
                     {/* mapping all the products */}
@@ -213,7 +213,7 @@ const Productfun = () => {
 
                         {data?.map((item, i) => {
                             //  
-                            return i > limit - 1 && i < 6 * page && <Box border={"1px solid red"}>
+                            return i > limit - 1 && i < 6 * page && <Box>
 
 
                                 <ProductCard key={item.id} data={item} />

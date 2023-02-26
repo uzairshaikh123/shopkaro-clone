@@ -7,7 +7,7 @@ const Productlist = ({data}) => {
 
   const router = useRouter();
   const Dlt = (id)=>{
-    axios.delete(`http://localhost:8080/users/${id}`)
+    axios.delete(`https://shopkaro-backend.onrender.com/users/${id}`)
     router.push('/users')
   }
   return (<>
@@ -41,7 +41,7 @@ const Productlist = ({data}) => {
 export default Productlist
 
 export async function getStaticProps(context) {
-  const response = await axios.get('http://localhost:8080/users');
+  const response = await axios.get('https://shopkaro-backend.onrender.com/users');
   const c = response.data;
   let data = c.slice(0,13)
   return {

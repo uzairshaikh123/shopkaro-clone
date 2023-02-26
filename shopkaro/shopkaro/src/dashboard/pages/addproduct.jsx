@@ -23,7 +23,7 @@ const Addproduct = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    fetch('http://localhost:8080/mens', {
+    fetch('https://shopkaro-backend.onrender.com/mens', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
