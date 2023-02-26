@@ -48,7 +48,7 @@ const Orders = ({data}) => {
 export default Orders
 
 export async function getStaticProps(context) {
-  const response = await axios.get('http://localhost:8080/orders');
+  const response = await axios.get('https://shopkaro-backend.onrender.com/orders');
   const c = response.data;
   let data = c.slice(0,13)
   return {
