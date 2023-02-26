@@ -33,7 +33,7 @@ const navigate=useNavigate()
 
 useEffect(()=>{
 
-axios.get("http://localhost:8080/login").then((res:AxiosResponse<inputdet[]>)=>{
+axios.get("https://shopkaro-backend.onrender.com/login").then((res:AxiosResponse<inputdet[]>)=>{
 
 setlogindata(res.data)
 
@@ -134,7 +134,7 @@ let obj={
 
 }
     if(signupemail && signuppassword){
-        axios.post("http://localhost:8080/login",obj)
+        axios.post("https://shopkaro-backend.onrender.com/login",obj)
         return navigate("/")
     }else{
         alert("fill all the details")

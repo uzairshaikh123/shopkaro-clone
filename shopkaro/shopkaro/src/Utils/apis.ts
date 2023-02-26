@@ -3,7 +3,7 @@ import { Product } from "./types"
 
 export const getsingleproduct=(id:string | undefined)=>{
 
-return axios.get(`http://localhost:8080/mens/${id}`).then((res)=>{
+return axios.get(`https://shopkaro-backend.onrender.com/mens/${id}`).then((res)=>{
    
    return res.data
 })
@@ -11,7 +11,7 @@ return axios.get(`http://localhost:8080/mens/${id}`).then((res)=>{
 }
 export const adddata=(obj:Product)=>{
 
-return axios.post(`http://localhost:8080/cart`,obj).then((res)=>{
+return axios.post("https://shopkaro-backend.onrender.com/cart",obj).then((res)=>{
   // console.log(res.data)
    return res.data
 })
@@ -19,15 +19,15 @@ return axios.post(`http://localhost:8080/cart`,obj).then((res)=>{
 }
 export const getcartdata=()=>{
 
-return axios.post(`http://localhost:8080/cart`).then((res)=>{
-   
+return axios.post("https://shopkaro-backend.onrender.com/cart").then((res)=>{
+   console.log(res.data)
    return res.data
 })
 
 }
 
 export const updateqnt=(obj:Product,id:number | undefined,qty:number| undefined,total:number | undefined)=>{
-   return axios.patch(`http://localhost:8080/cart/${id}`,{...obj,quantity:qty,price:total}).then(()=>{
+   return axios.patch(`https://shopkaro-backend.onrender.com/cart/${id}`,{...obj,quantity:qty,price:total}).then(()=>{
    
    
 

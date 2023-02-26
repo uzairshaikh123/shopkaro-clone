@@ -43,7 +43,7 @@ export default function Navbar() {
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
-        py={{ base: 3 }}
+        py={{ base: 4 }}
         px={{ base: 2 , md: 14,lg:16 }}
         borderBottom={1}
         borderStyle={'solid'}
@@ -129,7 +129,7 @@ export default function Navbar() {
 
               <MenuItem>Sign In</MenuItem>
               </RLink>
-<RLink to="signin">
+<RLink to="/admin">
 
 
               <MenuItem>Admin Login</MenuItem>

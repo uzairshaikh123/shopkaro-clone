@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import '../CSS/cart.css'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import { BsTypeH1 } from "react-icons/bs";
 
 const CartPage = () => {
     
@@ -27,30 +28,22 @@ const [state,setstate] = useState<number>(0)
 const dispatch = UseAppDispatch()
 
  useEffect(() => {
-    dispatch(getcartdatafun());
+    console.log("cart",dispatch(getcartdatafun()));
   }, []);
 
 
 useEffect(()=>{
 
 dispatch(getcartdatafun()).then(()=>{
-    let totalprice=cart.reduce((acc,item)=>{
-
-        return acc+item.price
-    
-    },0)
-    setprice(totalprice)
+   
 })
+let totalprice=cart.reduce((acc,item)=>{
 
-if(loading==false){
-    let totalprice=cart.reduce((acc,item)=>{
+    return acc+item.price
 
-        return acc+item.price
-    
-    },0)
-    setprice(totalprice)
+},0)
+setprice(totalprice)
 
-}
 
 
 
@@ -63,8 +56,13 @@ if(loading==false){
 
 const handledelete=(id:number)=>{
 
-axios.delete(`http://localhost:8080/cart/${id}`).then(()=>{
+axios.delete(`https://shopkaro-backend.onrender.com/cart/${id}`).then((res)=>{
+    console.log(dispatch(getcartdatafun()))
 setstate(state+1)
+console.log(res)
+
+
+
 })
 
 }
@@ -75,9 +73,7 @@ setstate(state+1)
     navigate("/payment");
   };
 
-  return (
-  
-    <div
+  return <div
       className="cart"
       style={{
         width: "100%",
@@ -100,7 +96,10 @@ setstate(state+1)
           <Loadingfun />
         ) : error ? (
           <h1>Error...</h1>
-        ) : (
+        ) :cart.length==0?<div style={{height:"500px",width:"100%px"}}>
+            <img src="https://bakestudio.in/assets/images/cart/empty-cart.gif" alt="" />
+            <h3 style={{fontSize:"20px",textAlign:"center"}}>ooops Cart is Empty...! Please add something</h3>
+        </div>: (
           <div
             className="added-products"
             style={{
@@ -144,7 +143,7 @@ setstate(state+1)
                     </h2>
                     <h3>by {item.brand}</h3>
                     <h3>Size : {item.size}</h3>
-                    <Buttonfun />
+                   <h3>Quantity : {item.quantity}</h3>
                   </div>
                   <div style={{ fontSize: "20px", padding: "10px" }}>
                     <h3
@@ -156,12 +155,13 @@ setstate(state+1)
                         cursor: "pointer",
                         fontSize: "25px",
                       }}
+                      onClick={()=>handledelete(item.id)}
                     >
                       X
                     </h3>
-                    $ {item.price}{" "}
+                    $ {item.price*item.quantity}{" "}
                     <span style={{ textDecoration: "line-through" }}>
-                      {Math.floor(Number(item.price) + 50) + 0.99}
+                      {Math.floor(Number(item.price*item.quantity) + 50) + 0.99}
                     </span>
                     <br />
                     <span style={{ fontSize: "15px" }}>free Shipping</span>
@@ -178,7 +178,7 @@ setstate(state+1)
             })}
           </div>
         )}
-        <div
+       {cart.length?<div
           className="summary"
           style={{
             width: "35%",
@@ -194,7 +194,7 @@ setstate(state+1)
 
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <span>Total Price</span>
-            <span>₹ 25</span>
+            <span>₹ {price+90}</span>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <span>Shipping Charges</span>
@@ -209,7 +209,7 @@ setstate(state+1)
               Amount Payable{" "}
 
             </span>
-            <span style={{ color: "#D3145A", fontSize: "25px" }}>₹ 25</span>
+            <span style={{ color: "#D3145A", fontSize: "25px" }}>₹ {price+90}</span>
           </div>
           <button
             style={{
@@ -228,43 +228,15 @@ setstate(state+1)
           >
             BUY NOW
           </button>
-        </div>
+        </div>:<h1></h1>}
+
+
+    </div> 
 
 
     </div>
-})}
+   
 
-    </div>}
-    {cart.length==0?<h1>
-        <img src="https://www.krosfitsports.com/public/empty-cart.gif" alt="" />
-    </h1>:<div style={{width:"35%",color:"black",padding:"40px",fontSize:"15px",textDecoration:"bold",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>
-<h1 style={{fontSize:"30px"}}>Summary</h1>
-<br />
-
-<div style={{display:"flex",justifyContent:"space-between"}}>
-    <span>Total Price</span>
-    <span>₹ {price}</span>
-</div>
-<div style={{display:"flex",justifyContent:"space-between"}}>
-    <span>Shipping Charges</span>
-    <span style={{color:"green"}}>Free</span>
-</div>
-<div style={{display:"flex",justifyContent:"space-between"}}>
-    <span>Applicable Tax and Charges</span>
-    <span>+ ₹ 90</span>
-</div>
-<div style={{display:"flex",justifyContent:"space-between"}}>
-    <span style={{color:"#D3145A",fontSize:"25px"}}>Amount Payable </span>
-    <span style={{color:"#D3145A",fontSize:"25px"}}>₹ {price+90}</span>
-</div>
-
-<button style={{height:"50px",width:"100%",border:"none",backgroundColor:"#D3145A",color:"white",display:"block",margin:"auto",marginTop:"20px",fontSize:"30px",borderRadius:"5px"}}>BUY NOW</button>
-
-    </div>}
- </div>
-
-    </div>
-  );
 };
 
 export default CartPage;

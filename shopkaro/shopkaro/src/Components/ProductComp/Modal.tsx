@@ -43,7 +43,7 @@ const handleadd= async (id:number | undefined)=>{
 
 
     let data =await getsingleproduct(`${id}`)
-    console.log(data)
+  
 adddata(data).then(()=>{
   let total = data.price*count
   updateqnt(data,id,count,total).then(()=>{
