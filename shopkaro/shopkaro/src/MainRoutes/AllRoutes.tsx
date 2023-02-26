@@ -16,11 +16,7 @@ const AllRoutes = () => {
     <Route path='/signin' element={<Signin />} />
     <Route path='/cart' element={<CartPage />} />
     <Route path='/payment' element={<Payment />} />
-    
-
-
-
-</Routes>
+ </Routes>
 
 
 
@@ -28,3 +24,4 @@ const AllRoutes = () => {
 }
 
 export default AllRoutes
+

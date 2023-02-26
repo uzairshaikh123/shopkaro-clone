@@ -31,8 +31,10 @@ import {
 } from '@chakra-ui/icons';
 import { HiShoppingCart ,HiSearch ,HiPencil} from "react-icons/hi";
 import logo from '../Assets/logo.png'
-import {Link as RLink} from 'react-router-dom'
+import {Link as RLink} from 'react-router-dom';
+
 export default function Navbar() {
+
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -41,8 +43,8 @@ export default function Navbar() {
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
-        py={{ base: 4 }}
-        px={{ base: 14 }}
+        py={{ base: 3 }}
+        px={{ base: 2 , md: 14,lg:16 }}
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
@@ -66,11 +68,10 @@ export default function Navbar() {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
-                <RLink to='/'>
 
-        
-           <Image w={"120px"}  h={"50px"} src={logo} alt='logo' />
-                </RLink>
+            <RLink to="/">
+              <Image w={"140px"}  h={"50px"} src={logo} alt='logo' />
+            </RLink>
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -82,16 +83,25 @@ export default function Navbar() {
           flex={{ base: 1, md: 0 }}
           justify={'flex-end'}
           direction={'row'}
-          spacing={6}
-          cursor={'pointer'}>
+          spacing={2}
+          cursor={'pointer'}
+          >
               
-              <Stack display="flex" gap="20px" direction={'row'}>
-                <HiPencil size={27} />
-                <HiSearch size={27} />
-                <RLink to="/cart">
+              <Stack fontSize="12px"  display="flex" gap="5px" direction={'row'}>
+               <Stack alignItems="center" ><HiPencil size={26} />
+               <span>SCRAPBOOK</span>
+               </Stack> 
 
-                <HiShoppingCart size={27} />
+               <Stack alignItems="center"><HiSearch size={26} />
+               <span>SEARCH</span>
+               </Stack>
+                
+                <Stack alignItems="center">
+                <RLink to="/cart">
+                <HiShoppingCart size={34} />
+                <span>CART</span>
                 </RLink>
+                </Stack>
               </Stack>
               <Menu>
             <MenuButton
@@ -100,15 +110,21 @@ export default function Navbar() {
               variant={'link'}
               cursor={'pointer'}
               border="none"
-              minW={0}>
+              minW={0}
+              lineHeight="16px"
+              >
+                <Stack alignItems="center">
               <Avatar
                 size={'sm'}
                 src={
                   'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9'
                 }
               />
+              <span style={{border:"none" , fontSize:"11px" , marginTop:"0px"}}>PROFILE</span>
+              </Stack>
             </MenuButton>
             <MenuList>
+
               <RLink to="/signin">
 
               <MenuItem>Sign In</MenuItem>

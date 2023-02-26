@@ -16,6 +16,8 @@ const Orders = ({data}) => {
 </div>
 <table className={styles.list}>
     <thead>
+
+      
       <tr>
         <th style={{paddingLeft:"20px"}}>User Name</th>
         <th>Email</th>
