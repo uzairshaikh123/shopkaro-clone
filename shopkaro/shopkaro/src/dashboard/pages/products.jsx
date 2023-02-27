@@ -9,7 +9,11 @@ const Productlist = ({c}) => {
   const Dlt = (id,item)=>{
     axios.post(`https://shopkaro-backend.onrender.com/deleted`,item)
     axios.delete(`https://shopkaro-backend.onrender.com/mens/${id}`)
+
+    router.push("/products");
+
     router.push('/products')
+
   }
   return (
     <>

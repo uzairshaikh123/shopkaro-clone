@@ -36,7 +36,7 @@ router.push(`${url}`)
 
 export default Dashboard
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
     // orders api 
     let data = await axios.get("https://shopkaro-backend.onrender.com/orders")
     let orders = await data.data;
