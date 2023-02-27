@@ -1,5 +1,15 @@
 # Shop Karo
 Shop Karo is an e-commerce platform that provides a wide range of fashion and lifestyle products to its customers. It was founded in 2023 and has grown to become one of the leading online shopping destinations in India.
+# ScreenShot 
+![shopkaro-homepage](https://user-images.githubusercontent.com/107634975/221508566-d5e3384f-9d29-415c-974a-1d643fabed0a.png)
+![shopkaro-footer](https://user-images.githubusercontent.com/107634975/221508588-bde01a8f-ae1a-4a48-b9ab-ff7b5526551b.png)
+![productpage](https://user-images.githubusercontent.com/107634975/221508609-3dd6000e-95b4-439e-9d41-5e500cc5d1e6.png)
+![productpage1](https://user-images.githubusercontent.com/107634975/221508638-ee1cbcf1-c484-4c50-8421-f1a7170e4f7d.png)
+![detailspage](https://user-images.githubusercontent.com/107634975/221508683-e0b4482f-ebd7-4794-a14a-c06e261e4677.png)
+![cart](https://user-images.githubusercontent.com/107634975/221508709-72c96e81-d3f4-4e36-8003-47fa3d0ac634.png)
+![paymentpage](https://user-images.githubusercontent.com/107634975/221508748-a375c611-d2ea-40b5-88cb-0768ef63d7b8.png)
+
+
 
 ## Features
 Shopkaro offers a variety of features that make online shopping easy and convenient for its customers. Some of its key features include:
