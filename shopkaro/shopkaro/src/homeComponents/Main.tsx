@@ -13,8 +13,9 @@ import {
   
 } from "@chakra-ui/react";
 import { BsHeart ,BsWhatsapp} from "react-icons/bs";
-import logo from '../Assets/logo.png'
+
 export default function Main() {
+
   const DataMain = [
     {
       desc: "All About Details",
@@ -31,7 +32,7 @@ export default function Main() {
       title:"Anujabofficial",
     },
     {
-      desc: "Look Story | #ContemporaryQuilting",
+      desc: "Celebrity Story | #GravityGrey",
       id: 3,
       img: "https://img2.junaroad.com/stories/story_p_63d0d8aff47b70081172ac44-1675402528.jpeg",
       follower:"30K Followers",
@@ -172,7 +173,7 @@ export default function Main() {
         {DataMain.map((el) => (
           <GridItem  backgroundColor="#fff" paddingBottom={4}>
             <Stack>
-             <Text fontWeight="400" fontSize="18px"  p="10px 0px 0px 10px" textAlign="left">{el.desc}</Text>
+             <Text textTransform="uppercase" whiteSpace="nowrap" overflow="hidden" textOverflow="ellipsis" fontWeight="400" fontSize="17px"  p="10px 0px 0px 12px" textAlign="left">{el.desc}</Text>
              <Image  src={el.img} width="100%" height="90%"  alt={el.desc} />
              </Stack>
 
@@ -181,9 +182,9 @@ export default function Main() {
               <Stack boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" borderRadius="50%" bgColor="white" padding="7px"> <BsWhatsapp color="limegreen"  fontSize="28px" /> </Stack>
              </Flex>
 
-             <Stack textAlign="left" paddingLeft={5}>
-              <Text><span>By </span>  {el.title} </Text>
-              <Text>{el.follower}</Text>
+             <Stack textAlign="left" color="grey" paddingLeft={5} fontWeight={600} lineHeight="10px" >
+              <Text >By <span style={{color:"black"}}>{el.title}</span> </Text>
+              <Text >{el.follower}</Text>
              </Stack>
             </GridItem>
             ))}

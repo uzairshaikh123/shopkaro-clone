@@ -1,4 +1,4 @@
-import { Accordion, Button, color } from '@chakra-ui/react'
+import { Accordion, Box, Button, color } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import React, { useEffect, useState } from 'react'
 import Accordionfun from '../Components/ProductComp/Accordion'
@@ -14,14 +14,27 @@ import { Product, sort } from '../Utils/types'
 const Productfun = () => {
 
     const [page, setpage] = useState<number>(1)
+    const [data,setdata] = useState<Product[]>([])
     const store = UseAppSelector((store) => store)
     const [limit, setlimit] = useState<number>(0)
+    const [state,setstate]=useState<number>(0)
     let { loading, error, products }: inistate = (store.Productreducer)
     // const [data,setdata]= useState<Product[]>([])
     let dispatch = UseAppDispatch()
     useEffect(() => {
-        dispatch(getdatafun())
-        // setdata(products)
+        const myfun=async ()=>{
+            try {
+              dispatch(getdatafun()).then((res:any)=>{
+
+                  setdata([...res])
+              })
+                //  setdata([...products])
+             } catch (error) {
+                 
+             }
+        }
+        myfun()
+      
 // console.log("data",products)
 
     }, [])
@@ -42,24 +55,25 @@ const Productfun = () => {
 
     const sortby = (obj: sort) => {
 
-        let f = obj
         console.log(obj)
-let originaldata=products
+       
+
         if(obj.val=="High Price"){
         let ndata=products.sort((a:any,b:any):number=>{
             return b.price-a.price
         })
-        products=ndata
+        setdata([...ndata])
+        
         }else if(obj.val=="Low Price"){
             let ndata=products.sort((a:any,b:any)=>{
                 return a.price-b.price
             })
-            products=ndata
+           setdata([...ndata])
         }else{
-
+            if (obj.status) {
         let data = products.filter((e, i) => {
 
-            if (obj.status) {
+          
                 if (obj.val == "trending") {
                     return e.trending
                 } else if (obj.val == "New") {
@@ -69,21 +83,97 @@ let originaldata=products
                 } else if (obj.val == "brand") {
                     return e.brand
 
+                }else if(obj.val=='100 To 500'){
+                   
+                    return e.price<500 && e.price>100
                 }
+                else if(obj.val=='500 To 700'){
+                   
+                    return e.price<700 && e.price>500
+                }
+                else if(obj.val=='700 To 900'){
+                   
+                    return e.price<900 && e.price>700
+                }
+                else if(obj.val=='900 To 1400'){
+                   
+                    return e.price<1400 && e.price>900
+                }
+                else if(obj.val=='More than 1400'){
+                   
+                    return e.price>1400 
+                }else if(obj.val=="red"){
+                    return e.color=="red"
+                }else if(obj.val=="black"){
+                    return e.color=="black"
+                }else if(obj.val=="yellow"){
+                    return e.color=="yellow"
+                }else if(obj.val=="blue"){
+                    return e.color=="blue"
+                }else if(obj.val=="white"){
+                    return e.color=="white"
+                }
+                else if(obj.val=="green"){
+                    return e.color=="green"
+                }else if(obj.val=="X"){
+                    return e.size=="X"
+                }else if(obj.val=="XL"){
+                    return e.size=="XL"
+                }else if(obj.val=="M"){
+                    return e.size=="M"
+                }else if(obj.val=="S"){
+                    return e.size=="S"
+                }else if(obj.val=="Banana Republic"){
+                    return e.brand=="Banana Republic"
+                }else if(obj.val=="Polo Ralph Lauren"){
+                    return e.brand=="Polo Ralph Lauren"
+                }
+                else if(obj.val=="Giorgio Armani"){
+                    return e.brand=="Giorgio Armani"
+                }
+                else if(obj.val=="Hugo Boss"){
+                    return e.brand=="Hugo Boss"
+                }
+                else if(obj.val=="Brooks Brother"){
+                    return e.brand=="Brooks Brother"
+                }else if(obj.val=="1% To 30%"){
 
-            }else{
-                products=originaldata
-            }
+                 return e.discount<30 && e.discount>1
+                }
+                else if(obj.val=="20% To 40%"){
+
+                 return e.discount<40 && e.discount>20
+                }
+                else if(obj.val=="40% To 60%"){
+
+                 return e.discount<60 && e.discount>40
+                }
+                else if(obj.val=="60% To 80%"){
+
+                 return e.discount<80 && e.discount>60
+                }
+                
+                else if(obj.val=="80% To 90%"){
+
+                 return e.discount<90 && e.discount>80
+                }
+                
+        else{
+                    setdata([...products])
+                } 
 
         })
-        products=data
+        setdata([...data])
+    }else{
+        setdata([...products])
+    }
     }
     
     
 }
     let sortdata = ["Sort By", "trending", "New", "Discounts", "High Price", "Low Price"]
-    let Pricedata = ["Price", '0 To 499', "500 To 999", "1000 To 1499", "1500 To 1999", "2000 To 2999"]
-    let Disdata = ["Discounts", '1% To 30%', "20% To 40%", "40% To 60%", "60% To 80%", "80% To 100%"]
+    let Pricedata = ["Price", '100 To 500', "500 To 700", "700 To 900", "900 To 1400", "More than 1400"]
+    let Disdata = ["Discounts", '1% To 30%', "20% To 40%", "40% To 60%", "60% To 80%", "80% To 90%"]
     let colors = ["Colors", 'red', 'black', 'yellow', "green", "white", "blue"]
     let size = ["Size", "X", "XL", "M", "S"]
     let brands = ["Brand", "Banana Republic", "Polo Ralph Lauren", "Giorgio Armani", "Hugo Boss", "Brooks Brother"]
@@ -94,10 +184,10 @@ let originaldata=products
     return loading ? <Loadingfun /> : error ? <h1>Error...</h1> :
         <div>
 
-            <div className="cont" style={{ display: "flex", backgroundColor: "white", justifyContent: "center" }}>
+            <div className="cont" style={{ display: "flex", backgroundColor: "white", justifyContent: "space-around",marginTop:"100px" }}>
 
 
-                <div style={{ width: "19%", border: "1px solid grey", height: "500px", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
+                <Box style={{ width: "19%", border: "1px solid grey", height: "500px", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
 
                     <h1 style={{ color: "black", fontSize: "20px", margin: "15px" }}> Filter & Sort</h1>
                     <div className='filter_and_sort' style={{ color: "black", backgroundColor: "white" }}>
@@ -113,23 +203,24 @@ let originaldata=products
 
 
 
-                </div>
-                <div style={{ width: "78%", height: "auto" }}>
-                    <h1 style={{ textAlign: "center", color: "black" }}>Mens Products</h1>
+                </Box>
+                <Box  w={{base:"48%",sm:"50%",md:"50%",xl:"78%"}}>
+                    <h1 style={{ textAlign: "center", color: "black" ,backgroundColor:"#D3145A",height:"40px",alignItems:"center",fontSize:"25px"}}>Mens Products</h1>
 
 
                     {/* mapping all the products */}
-                    <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", height: "auto", gap: "5px" }}>
+                    <Box style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", height: "auto", gap: "5px" }}>
 
-                        {products.map((item, i) => {
-                            return i > limit - 1 && i < 6 * page && <div>
+                        {data?.map((item, i) => {
+                            //  
+                            return i > limit - 1 && i < 6 * page && <Box>
 
 
                                 <ProductCard key={item.id} data={item} />
 
-                            </div>
+                            </Box>
                         })}
-                    </div>
+                    </Box>
                     <div style={{ height: "200px", display: "flex", justifyContent: "center", gap: "10px" }}>
 
 
@@ -146,7 +237,7 @@ let originaldata=products
 
                     </div>
 
-                </div>
+                </Box>
 
 
 

@@ -8,8 +8,11 @@ const Productlist = ({data}) => {
   const router = useRouter();
   const Dlt = (id)=>{
     axios.delete(`https://shopkaro-backend.onrender.com/mens/${id}`)
+
     router.push("/deleted");
 
+
+    router.push('/products')
   }
   return (<>
     <div className={styles.main}>

@@ -7,7 +7,7 @@ const Orders = ({data}) => {
 
   // const router = useRouter();
   // const Dlt = (id)=>{
-  //   axios.delete(`http://localhost:8080/users/${id}`)
+  //   axios.delete(`https://shopkaro-backend.onrender.com/users/${id}`)
   //   router.push('/users')
   // }
   return (<>

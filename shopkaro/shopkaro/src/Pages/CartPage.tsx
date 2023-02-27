@@ -6,27 +6,74 @@ import { getcartdatafun } from "../Redux/Cart/cart.action";
 import { inistate } from "../Redux/Cart/cart.reducer";
 import { UseAppDispatch, UseAppSelector } from "../Redux/store";
 import { Product } from "../Utils/types";
-// import { getcartdata } from '../Utils/apis'
-import "../CSS/cart.css";
 import { redirect } from "react-router";
 import { useNavigate } from "react-router-dom";
+// import { getcartdata } from '../Utils/apis'
+
+import '../CSS/cart.css'
+import axios from 'axios'
+import {Link} from 'react-router-dom'
+import { BsTypeH1 } from "react-icons/bs";
 
 const CartPage = () => {
-  const store = UseAppSelector((store) => store);
-  const navigate = useNavigate();
+    
+    const store = UseAppSelector((store)=>store)
+    let {loading,error,cart}:inistate=(store.cartreducer)
+   const navigate = useNavigate();
+    const [price,setprice] = useState<number>(0)
+    
+    
+const [state,setstate] = useState<number>(0)
 
-  let { loading, error, cart }: inistate = store.cartreducer;
-  const dispatch = UseAppDispatch();
-  useEffect(() => {
-    dispatch(getcartdatafun());
+const dispatch = UseAppDispatch()
+
+ useEffect(() => {
+    console.log("cart",dispatch(getcartdatafun()));
   }, []);
+
+
+useEffect(()=>{
+
+dispatch(getcartdatafun()).then(()=>{
+   
+})
+let totalprice=cart.reduce((acc,item)=>{
+
+    return acc+item.price
+
+},0)
+setprice(totalprice)
+
+
+
+
+
+
+},[state])
+
+
+
+
+const handledelete=(id:number)=>{
+
+axios.delete(`https://shopkaro-backend.onrender.com/cart/${id}`).then((res)=>{
+    console.log(dispatch(getcartdatafun()))
+setstate(state+1)
+console.log(res)
+
+
+
+})
+
+}
+
+
 
   const redirectTopayment = (): void => {
     navigate("/payment");
   };
 
-  return (
-    <div
+  return <div
       className="cart"
       style={{
         width: "100%",
@@ -36,6 +83,7 @@ const CartPage = () => {
       }}
     >
       <div
+        className="cart-parent"
         style={{
           width: "100%",
           display: "flex",
@@ -48,8 +96,12 @@ const CartPage = () => {
           <Loadingfun />
         ) : error ? (
           <h1>Error...</h1>
-        ) : (
+        ) :cart.length==0?<div style={{height:"500px",width:"100%px"}}>
+            <img src="https://bakestudio.in/assets/images/cart/empty-cart.gif" alt="" />
+            <h3 style={{fontSize:"20px",textAlign:"center"}}>ooops Cart is Empty...! Please add something</h3>
+        </div>: (
           <div
+            className="added-products"
             style={{
               width: "50%",
               color: "black",
@@ -66,6 +118,7 @@ const CartPage = () => {
             {cart.map((item: Product) => {
               return (
                 <div
+                  className="product-card"
                   key={item.id}
                   style={{
                     display: "flex",
@@ -81,13 +134,16 @@ const CartPage = () => {
                       alt=""
                     />
                   </div>
-                  <div style={{ position: "absolute", left: "20%" }}>
+                  <div
+                    className="detailed-product"
+                    style={{ position: "absolute", left: "20%" }}
+                  >
                     <h2 style={{ color: "#D3145A", fontSize: "20px" }}>
                       {item.name}
                     </h2>
                     <h3>by {item.brand}</h3>
                     <h3>Size : {item.size}</h3>
-                    <Buttonfun />
+                   <h3>Quantity : {item.quantity}</h3>
                   </div>
                   <div style={{ fontSize: "20px", padding: "10px" }}>
                     <h3
@@ -99,12 +155,13 @@ const CartPage = () => {
                         cursor: "pointer",
                         fontSize: "25px",
                       }}
+                      onClick={()=>handledelete(item.id)}
                     >
                       X
                     </h3>
-                    $ {item.price}{" "}
+                    $ {item.price*item.quantity}{" "}
                     <span style={{ textDecoration: "line-through" }}>
-                      {Math.floor(Number(item.price) + 50) + 0.99}
+                      {Math.floor(Number(item.price*item.quantity) + 50) + 0.99}
                     </span>
                     <br />
                     <span style={{ fontSize: "15px" }}>free Shipping</span>
@@ -121,7 +178,8 @@ const CartPage = () => {
             })}
           </div>
         )}
-        <div
+       {cart.length?<div
+          className="summary"
           style={{
             width: "35%",
             color: "black",
@@ -136,7 +194,7 @@ const CartPage = () => {
 
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <span>Total Price</span>
-            <span>₹ 25</span>
+            <span>₹ {price+90}</span>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <span>Shipping Charges</span>
@@ -149,8 +207,9 @@ const CartPage = () => {
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <span style={{ color: "#D3145A", fontSize: "25px" }}>
               Amount Payable{" "}
+
             </span>
-            <span style={{ color: "#D3145A", fontSize: "25px" }}>₹ 25</span>
+            <span style={{ color: "#D3145A", fontSize: "25px" }}>₹ {price+90}</span>
           </div>
           <button
             style={{
@@ -169,10 +228,15 @@ const CartPage = () => {
           >
             BUY NOW
           </button>
-        </div>
-      </div>
+        </div>:<h1></h1>}
+
+
+    </div> 
+
+
     </div>
-  );
+   
+
 };
 
 export default CartPage;

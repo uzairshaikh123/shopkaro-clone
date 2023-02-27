@@ -18,7 +18,7 @@ import {
 import { FiShoppingCart } from 'react-icons/fi'
 import React,{useState,useEffect} from 'react'
 import { Product } from '../../Utils/types'
-import { adddata, getcartdata, getsingleproduct } from '../../Utils/apis'
+import { adddata, getcartdata, getsingleproduct, updateqnt } from '../../Utils/apis'
 import { useSelector } from 'react-redux'
 import { UseAppSelector } from '../../Redux/store'
 
@@ -27,7 +27,7 @@ import { UseAppSelector } from '../../Redux/store'
     id?:number;
     name:string | undefined;
     img:string | undefined;
-    price:string | undefined;
+    price:number | undefined;
     
   }
 
@@ -43,10 +43,14 @@ const handleadd= async (id:number | undefined)=>{
 
 
     let data =await getsingleproduct(`${id}`)
-    console.log(data)
+  
 adddata(data).then(()=>{
-    // Toast add here
+  let total = data.price*count
+  updateqnt(data,id,count,total).then(()=>{
+
     alert("Product added successfully")
+  })
+    
 }).catch(()=>{
     alert("Product already exist")
 })
@@ -96,7 +100,10 @@ adddata(data).then(()=>{
                 Cancel
               </Button>
               {/* <Toast /> */}
-              <Button colorScheme='blue' onClick={()=>handleadd(id)}> 
+              <Button colorScheme='blue' onClick={()=>{
+                onClose()
+                handleadd(id)
+                }}> 
               ADD
               </Button>
             </ModalFooter>
