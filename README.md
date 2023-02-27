@@ -3,6 +3,8 @@ Shop Karo is an e-commerce platform that provides a wide range of fashion and li
 # ScreenShot 
 ![shopkaro-homepage](https://user-images.githubusercontent.com/107634975/221508566-d5e3384f-9d29-415c-974a-1d643fabed0a.png)
 ![shopkaro-footer](https://user-images.githubusercontent.com/107634975/221508588-bde01a8f-ae1a-4a48-b9ab-ff7b5526551b.png)
+![loginpage](https://user-images.githubusercontent.com/107634975/221510084-24e724da-4d50-48af-8b7a-6e46b19511c1.png)
+![signupPage](https://user-images.githubusercontent.com/107634975/221510103-fc9b7201-2e07-41f4-853b-ddb4f583968f.png)
 ![productpage](https://user-images.githubusercontent.com/107634975/221508609-3dd6000e-95b4-439e-9d41-5e500cc5d1e6.png)
 ![productpage1](https://user-images.githubusercontent.com/107634975/221508638-ee1cbcf1-c484-4c50-8421-f1a7170e4f7d.png)
 ![detailspage](https://user-images.githubusercontent.com/107634975/221508683-e0b4482f-ebd7-4794-a14a-c06e261e4677.png)
