@@ -7,7 +7,9 @@ import '../CSS/signin.css'
 import jwt_decode from 'jwt-decode'
 import { Navigate, useNavigate } from 'react-router-dom';
 import { inputdet } from '../Utils/types';
-
+import { sign } from 'crypto';
+let t=sessionStorage.getItem("token") || ""
+console.log("s",t)
 const Signin = () => {
     const [email,setemail] = useState("")
     const [token,settoken] = useState(sessionStorage.getItem("token")|| "")
@@ -15,6 +17,8 @@ const Signin = () => {
     const [signupemail,setsignupemail] = useState("")
     const [signuppassword,setsignuppassword] = useState("")
     const [password,setepassword] = useState("")
+    
+    const [state,setstate]=useState<boolean>()
     const [logindata,setlogindata] = useState<inputdet[]>([])
 const navigate=useNavigate()
     const [user, setUser] = useState<any>([]);
@@ -34,13 +38,8 @@ const navigate=useNavigate()
 useEffect(()=>{
 
 axios.get("https://shopkaro-backend.onrender.com/login").then((res:AxiosResponse<inputdet[]>)=>{
-
-setlogindata(res.data)
-
-
+    setlogindata(res.data)
 })
-
-
 },[])
 
 
@@ -73,11 +72,6 @@ setlogindata(res.data)
 
    
 
-
-console.log("user",user)
-console.log(profile)
-
-
 const handlechange=(e: React.ChangeEvent<HTMLInputElement>)=>{
     
 
@@ -100,6 +94,15 @@ setepassword(val)
 
 
 }
+
+
+console.log("l",logindata)
+
+if(t){
+    return  <Navigate to="/" />
+ }
+
+
 const checklogin=(e:React.FormEvent<HTMLFormElement>)=>{
 e.preventDefault()
 
@@ -107,14 +110,15 @@ e.preventDefault()
 if(logindata.length==0){
     alert("user not found ! Please Sign up")
 }else{
-   let data= logindata.filter((e)=>{
+   let data = logindata.filter((e)=>{
    
 
         return e.email==email && e.password==password
     })
     if(data.length){
-        alert("Sign in successfull")
-navigate("/")
+        console.log(state)
+        setstate(true)
+        window.location.reload();
     }else{
         alert("user not found ! Please Sign up")
     }
@@ -124,26 +128,23 @@ navigate("/")
 }
 
 const handlesignup=(e:React.FormEvent<HTMLFormElement>)=>{
-
-
     e.preventDefault()
 let obj={
     "username":username,
     "email":signupemail,
     "password":signuppassword
-
 }
     if(signupemail && signuppassword){
-        axios.post("https://shopkaro-backend.onrender.com/login",obj)
-        return navigate("/")
+        axios.post("https://shopkaro-backend.onrender.com/login",obj).then((res)=>{
+console.log(signupemail,signuppassword)
+          setstate(true)
+          window.location.reload();
+
+        })
+        
     }else{
         alert("fill all the details")
     }
-
-
-
-  
-
 }
 
 
@@ -155,10 +156,19 @@ console.log("t",token)
 
 
 if(user.access_token){
+  
     sessionStorage.setItem("token",user.access_token)
     alert("Sign in successfull")
 return  <Navigate to="/" />
  }
+
+if(state){
+    sessionStorage.setItem("token","uqwhdlkqjelwqkoek")
+    alert("Sign in successfull")
+    return  <Navigate to="/" />
+}
+
+console.log(state)
 
     return (
         <div className='main' style={{marginTop:"150px"}}>
