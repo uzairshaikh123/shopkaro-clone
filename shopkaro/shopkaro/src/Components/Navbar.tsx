@@ -34,9 +34,13 @@ import logo from '../Assets/logo.png'
 import {Link as RLink} from 'react-router-dom';
 
 export default function Navbar() {
-
+let token=sessionStorage.getItem("token")
+console.log("token",token)
   const { isOpen, onToggle } = useDisclosure();
-
+const handellogout=()=>{
+  sessionStorage.setItem("token","")
+  window.location.reload();
+}
   return (
     <Box position="fixed" width="100%" top={0} zIndex={1}>
       <Flex
@@ -128,6 +132,10 @@ export default function Navbar() {
               <RLink to="/signin">
 
               <MenuItem>Sign In</MenuItem>
+              </RLink>
+              <RLink to="/">
+
+              {token?<MenuItem onClick={handellogout}>Logout</MenuItem>:""}
               </RLink>
 <RLink to="/admin">
 
